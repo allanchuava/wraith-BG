@@ -34,24 +34,24 @@ paths:
     path: /es
     selector: ".js"
 
-  # questionnaire: 
-  #   path: /benefits/benefit-finder#benefits&qc=cat_31
-  #   selector: ".js"
-  # ES-questionnaire: 
-  #   path: /es/benefits/benefit-finder#benefits&qc=cat_31
-  #   selector: ".js"
-  # browse-by-category: 
-  #   path: /benefits/browse-by-category
-  #   selector: ".js"
-  # ES-browse-by-category: 
-  #   path: /es/benefits/browse-by-category
-  #   selector: ".js"
-  # other-resources: 
-  #   path: /benefits/other-resources
-  #   selector: ".js"
-  # ES-other-resources: 
-  #   path: /es/benefits/other-resources
-  #   selector: ".js"
+  questionnaire: 
+    path: /benefits/benefit-finder#benefits&qc=cat_31
+    selector: ".js"
+  ES-questionnaire: 
+    path: /es/benefits/benefit-finder#benefits&qc=cat_31
+    selector: ".js"
+  browse-by-category: 
+    path: /benefits/browse-by-category
+    selector: ".js"
+  ES-browse-by-category: 
+    path: /es/benefits/browse-by-category
+    selector: ".js"
+  other-resources: 
+    path: /benefits/other-resources
+    selector: ".js"
+  ES-other-resources: 
+    path: /es/benefits/other-resources
+    selector: ".js"
 
   faq: 
     path: /help/faqs

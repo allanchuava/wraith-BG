@@ -34,269 +34,138 @@ paths:
 
 
   #Benefits.gov links
-  # home:
-  #   path: /
-  #   selector: '[id="main"]'
-  # EShome:
-  #   path: /es
-  #   selector: '[id="main"]'
+  home:
+    path: /
+    selector: '[id="main"]'
+  EShome:
+    path: /es
+    selector: '[id="main"]'
 
-  # questionnaire:
-  #   path: /benefits/benefit-finder#benefits&qc=cat_1
-  #   selector: '[id="main"]'
-  # ES-questionnaire: 
-  #   path: /es/benefits/benefit-finder#benefits&qc=cat_1
-  #   selector: '[id="main"]'
+  questionnaire:
+    path: /benefits/benefit-finder#benefits&qc=cat_1
+    selector: '[id="main"]'
+  ES-questionnaire: 
+    path: /es/benefits/benefit-finder#benefits&qc=cat_1
+    selector: '[id="main"]'
 
-  # browse-by-category: 
-  #   path: /benefits/browse-by-category
-  #   selector: '[id="main"]'
-  # ES-browse-by-category: 
-  #   path: /es/benefits/browse-by-category
-  #   selector: '[id="main"]'
-  # browse-by-state:
-  #   path: /benefits/browse-by-state
-  #   selector: '[id="main"]'
-  # ES-browse-by-state: 
-  #   path:  /es/benefits/browse-by-state
-  #   selector: '[id="main"]'
-  # browse-by-agency: 
-  #   path: /benefits/browse-by-agency
-  #   selector: '[id="main"]'
-  # ES-browse-by-agency: 
-  #   path: /es/benefits/browse-by-agency
-  #   selector: '[id="main"]'
-  # other-resources: 
-  #   path: /benefits/other-resources
-  #   selector: '[id="main"]'
-  # ES-other-resources: 
-  #   path: /es/benefits/other-resources
-  #   selector: '[id="main"]'
+  browse-by-category: 
+    path: /benefits/browse-by-category
+    selector: '[id="main"]'
+  ES-browse-by-category: 
+    path: /es/benefits/browse-by-category
+    selector: '[id="main"]'
+  browse-by-state:
+    path: /benefits/browse-by-state
+    selector: '[id="main"]'
+  ES-browse-by-state: 
+    path:  /es/benefits/browse-by-state
+    selector: '[id="main"]'
+  browse-by-agency: 
+    path: /benefits/browse-by-agency
+    selector: '[id="main"]'
+  ES-browse-by-agency: 
+    path: /es/benefits/browse-by-agency
+    selector: '[id="main"]'
+  other-resources: 
+    path: /benefits/other-resources
+    selector: '[id="main"]'
+  ES-other-resources: 
+    path: /es/benefits/other-resources
+    selector: '[id="main"]'
 
-  # news-and-updates: 
-  #   path: /newsroom/news-and-updates
-  #   selector: '[id="main"]'
-  # ES-news-and-updates: 
-  #   path: /es/newsroom/news-and-updates
-  #   selector: '[id="main"]'
-  # compass-newsletter: 
-  #   path: /newsroom/eNewsletter/april-2017
-  #   selector: '[id="main"]'
-  # ES-compass-newsletter: 
-  #   path: /es/newsroom/eNewsletter/april-2017
-  #   selector: '[id="main"]'
+  news-and-updates: 
+    path: /newsroom/news-and-updates
+    selector: '[id="main"]'
+  ES-news-and-updates: 
+    path: /es/newsroom/news-and-updates
+    selector: '[id="main"]'
+  compass-newsletter: 
+    path: /newsroom/eNewsletter/april-2017
+    selector: '[id="main"]'
+  ES-compass-newsletter: 
+    path: /es/newsroom/eNewsletter/april-2017
+    selector: '[id="main"]'
 
-  # get-involved:
-  #   path: /get-involved
-  #   selector: '[id="main"]'
-  # ES-get-involved: 
-  #   path: /es/involúcrese
-  #   selector: '[id="main"]'
-  # become-an-advocate:
-  #   path: /get-involved#become-an-advocate
-  #   selector: '[id="main"]'
-  # ES-become-an-advocate:
-  #   path: /es/involúcrese#conviértase-en-un-representante
-  #   selector: '[id="main"]'
-  # become-an-affiliate:
-  #   path: /get-involved#become-an-affiliate
-  #   selector: '[id="main"]'
-  # ES-become-an-affiliate:
-  #   path: /es/involúcrese#conviértase-en-un-afiliado
-  #   selector: '[id="main"]'
-  # link-to-us:
-  #   path: /get-involved#link-to-us
-  #   selector: '[id="main"]'
-  # ES-link-to-us:
-  #   path: /es/involúcrese#enlace-su-sitio-al-nuestro
-  #   selector: '[id="main"]'
+  get-involved:
+    path: /get-involved
+    selector: '[id="main"]'
+  ES-get-involved: 
+    path: /es/involúcrese
+    selector: '[id="main"]'
+  become-an-advocate:
+    path: /get-involved#become-an-advocate
+    selector: '[id="main"]'
+  ES-become-an-advocate:
+    path: /es/involúcrese#conviértase-en-un-representante
+    selector: '[id="main"]'
+  become-an-affiliate:
+    path: /get-involved#become-an-affiliate
+    selector: '[id="main"]'
+  ES-become-an-affiliate:
+    path: /es/involúcrese#conviértase-en-un-afiliado
+    selector: '[id="main"]'
+  link-to-us:
+    path: /get-involved#link-to-us
+    selector: '[id="main"]'
+  ES-link-to-us:
+    path: /es/involúcrese#enlace-su-sitio-al-nuestro
+    selector: '[id="main"]'
 
-  # about-us: 
-  #   path: /about-us
-  #   selector: '[id="main"]'
-  # ES-about-us: 
-  #   path: /es/sobre-nosotros
-  #   selector: '[id="main"]'
-  # our-mission:
-  #   path: /about-us#our-mission
-  # ES-our-mission:
-  #   path: /es/sobre-nosotros#nuestra-misión
-  # our-history:
-  #   path: /about-us#our-history
-  # ES-our-history:
-  #   path: /es/sobre-nosotros#nuestra-historia
-  # our-partners:
-  #   path: /about-us#our-partners
-  # ES-our-partners:
-  #   path: /es/sobre-nosotros#nuestros-socios
-  # become-a-partner: 
-  #   path: /about-us#become-a-partner
-  # ES-become-a-partner: 
-  #   path: /es/sobre-nosotros#conviértase-en-un-socio
-  # our-platform: 
-  #   path: /about-us#our-platform
-  # ES-platform: 
-  #   path: /es/sobre-nosotros#nuestra-plataforma
-  # recognition: 
-  #   path: /about-us#recognition
-  # ES-recognition: 
-  #   path: /es/sobre-nosotros#reconocimiento
+  about-us: 
+    path: /about-us
+    selector: '[id="main"]'
+  ES-about-us: 
+    path: /es/sobre-nosotros
+    selector: '[id="main"]'
+  our-mission:
+    path: /about-us#our-mission
+  ES-our-mission:
+    path: /es/sobre-nosotros#nuestra-misión
+  our-history:
+    path: /about-us#our-history
+  ES-our-history:
+    path: /es/sobre-nosotros#nuestra-historia
+  our-partners:
+    path: /about-us#our-partners
+  ES-our-partners:
+    path: /es/sobre-nosotros#nuestros-socios
+  become-a-partner: 
+    path: /about-us#become-a-partner
+  ES-become-a-partner: 
+    path: /es/sobre-nosotros#conviértase-en-un-socio
+  our-platform: 
+    path: /about-us#our-platform
+  ES-platform: 
+    path: /es/sobre-nosotros#nuestra-plataforma
+  recognition: 
+    path: /about-us#recognition
+  ES-recognition: 
+    path: /es/sobre-nosotros#reconocimiento
 
-  # faq: 
-  #   path: /help/faqs
-  #   selector: '[id="main"]'
-  # ES-faq: 
-  #   path: /es/help/faqs
-  #   selector: '[id="main"]'
-  # contact-us: 
-  #   path: /help/contact-us
-  #   selector: '[id="main"]'
-  # ES-contact-us: 
-  #   path: /es/help/contact-us
-  #   selector: '[id="main"]'
-  # privacy-and-terms: 
-  #   path: /about/privacy-and-terms-use
-  #   selector: '[id="main"]'
-  # ES-privacy-and-terms: 
-  #   path: /es/privacidad-y-términos-de-uso
-  #   selector: '[id="main"]'
+  faq: 
+    path: /help/faqs
+    selector: '[id="main"]'
+  ES-faq: 
+    path: /es/help/faqs
+    selector: '[id="main"]'
+  contact-us: 
+    path: /help/contact-us
+    selector: '[id="main"]'
+  ES-contact-us: 
+    path: /es/help/contact-us
+    selector: '[id="main"]'
+  privacy-and-terms: 
+    path: /about/privacy-and-terms-use
+    selector: '[id="main"]'
+  ES-privacy-and-terms: 
+    path: /es/privacidad-y-términos-de-uso
+    selector: '[id="main"]'
 
   ################################################################
   # Place BIDs to compare here
   ################################################################
 
-  BID-1895:
-    path: /benefits/benefit-details/1895
-    selector: '[id="main"]'
-  BID-1895-ES:
-    path: /es/benefits/benefit-details/1895
-    selector: '[id="main"]'
-
-  BID-1896:
-    path: /benefits/benefit-details/1896
-    selector: '[id="main"]'
-  BID-1896-ES:
-    path: /es/benefits/benefit-details/1896
-    selector: '[id="main"]'
-
-  BID-1897:
-    path: /benefits/benefit-details/1897
-    selector: '[id="main"]'
-  BID-1897-ES:
-    path: /es/benefits/benefit-details/1897
-    selector: '[id="main"]'
-
-  BID-1898:
-    path: /benefits/benefit-details/1898
-    selector: '[id="main"]'
-  BID-1898-ES:
-    path: /es/benefits/benefit-details/1898
-    selector: '[id="main"]'
-
-  BID-1899:
-    path: /benefits/benefit-details/1899
-    selector: '[id="main"]'
-  BID-1899-ES:
-    path: /es/benefits/benefit-details/1899
-    selector: '[id="main"]'
-
-  BID-1900:
-    path: /benefits/benefit-details/1900
-    selector: '[id="main"]'
-  BID-1900-ES:
-    path: /es/benefits/benefit-details/1900
-    selector: '[id="main"]'
-
-  BID-1901:
-    path: /benefits/benefit-details/1901
-    selector: '[id="main"]'
-  BID-1901-ES:
-    path: /es/benefits/benefit-details/1901
-    selector: '[id="main"]'
-
-  BID-1902:
-    path: /benefits/benefit-details/1902
-    selector: '[id="main"]'
-  BID-1902-ES:
-    path: /es/benefits/benefit-details/1902
-    selector: '[id="main"]'
-
-  BID-1903:
-    path: /benefits/benefit-details/1903
-    selector: '[id="main"]'
-  BID-1903-ES:
-    path: /es/benefits/benefit-details/1903
-    selector: '[id="main"]'
-
-  BID-1904:
-    path: /benefits/benefit-details/1904
-    selector: '[id="main"]'
-  BID-1904-ES:
-    path: /es/benefits/benefit-details/1904
-    selector: '[id="main"]'
-
-  BID-1905:
-    path: /benefits/benefit-details/1905
-    selector: '[id="main"]'
-  BID-1905-ES:
-    path: /es/benefits/benefit-details/1905
-    selector: '[id="main"]'
-
-  BID-1906:
-    path: /benefits/benefit-details/1906
-    selector: '[id="main"]'
-  BID-1906-ES:
-    path: /es/benefits/benefit-details/1906
-    selector: '[id="main"]'
-
-  BID-1907:
-    path: /benefits/benefit-details/1907
-    selector: '[id="main"]'
-  BID-1907-ES:
-    path: /es/benefits/benefit-details/1907
-    selector: '[id="main"]'
-
-  BID-1908:
-    path: /benefits/benefit-details/1908
-    selector: '[id="main"]'
-  BID-1908-ES:
-    path: /es/benefits/benefit-details/1908
-    selector: '[id="main"]'
-
-  BID-1909:
-    path: /benefits/benefit-details/1909
-    selector: '[id="main"]'
-  BID-1909-ES:
-    path: /es/benefits/benefit-details/1909
-    selector: '[id="main"]'
-
-  BID-1910:
-    path: /benefits/benefit-details/1910
-    selector: '[id="main"]'
-  BID-1910-ES:
-    path: /es/benefits/benefit-details/1910
-    selector: '[id="main"]'
-
-  BID-1911:
-    path: /benefits/benefit-details/1911
-    selector: '[id="main"]'
-  BID-1911-ES:
-    path: /es/benefits/benefit-details/1911
-    selector: '[id="main"]'
-
-  BID-1912:
-    path: /benefits/benefit-details/1912
-    selector: '[id="main"]'
-  BID-1912-ES:
-    path: /es/benefits/benefit-details/1912
-    selector: '[id="main"]'
-
-  BID-1917:
-    path: /benefits/benefit-details/1917
-    selector: '[id="main"]'
-  BID-1917-ES:
-    path: /es/benefits/benefit-details/1917
-    selector: '[id="main"]'
+  
 
 
 ################################################################
