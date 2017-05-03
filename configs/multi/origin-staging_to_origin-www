@@ -1,0 +1,4 @@
+configs/BG/BG_origin-staging_to_origin-www.yaml
+configs/GL/GL_EN_origin-staging_to_origin-www.yaml
+configs/GL/GL_ES_origin-staging_to_origin-www.yaml
+configs/SSA/SSA_origin-staging_to_origin-www.yaml

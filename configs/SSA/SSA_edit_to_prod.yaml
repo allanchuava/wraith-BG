@@ -1,0 +1,10 @@
+#ssabest.benefits.gov compare edit to prod
+
+# run with "wraith capture configs/SSA/SSA_edit_to_prod.yaml"
+
+imports: "settings_SSA.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  edit: "https://edit.ssabest.benefits.gov"
+  prod: "https://www.ssabest.benefits.gov"

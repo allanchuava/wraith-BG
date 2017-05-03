@@ -1,0 +1,10 @@
+#Benefits.gov compare edit to prod
+
+# run with "wraith capture configs/BG/BG_edit_to_prod.yaml"
+
+imports: "settings_BG.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  edit: "https://edit.benefits.gov"
+  prod: "https://www.benefits.gov"

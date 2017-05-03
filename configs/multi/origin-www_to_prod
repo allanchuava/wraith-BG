@@ -1,0 +1,4 @@
+configs/BG/BG_origin-www_to_prod.yaml
+configs/GL/GL_EN_origin-www_to_prod.yaml
+configs/GL/GL_ES_origin-www_to_prod.yaml
+configs/SSA/SSA_origin-www_to_prod.yaml

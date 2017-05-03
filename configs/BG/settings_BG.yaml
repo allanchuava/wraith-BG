@@ -1,0 +1,171 @@
+##############################################################
+##############################################################
+# Import file with BG settings
+##############################################################
+##############################################################
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+phantomjs_options: --ignore-ssl-errors=yes --ssl-protocol=tlsv1
+
+################################################################
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  #- 450x650
+  - 1280
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'shots/capture/BG'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first
+
+
+# (required) The paths to capture. This particular config is using casperjs, so we can take screenshots of selectors rather than the entire page.
+paths:
+
+ #Benefits.gov links
+  home:
+    path: /
+    selector: '[id="main"]'
+  EShome:
+    path: /es
+    selector: '[id="main"]'
+
+  browse-by-category: 
+    path: /benefits/browse-by-category
+    selector: '[id="main"]'
+  ES-browse-by-category: 
+    path: /es/benefits/browse-by-category
+    selector: '[id="main"]'
+  browse-by-state:
+    path: /benefits/browse-by-state
+    selector: '[id="main"]'
+  ES-browse-by-state: 
+    path:  /es/benefits/browse-by-state
+    selector: '[id="main"]'
+  browse-by-agency: 
+    path: /benefits/browse-by-agency
+    selector: '[id="main"]'
+  ES-browse-by-agency: 
+    path: /es/benefits/browse-by-agency
+    selector: '[id="main"]'
+  other-resources: 
+    path: /benefits/other-resources
+    selector: '[id="main"]'
+  ES-other-resources: 
+    path: /es/benefits/other-resources
+    selector: '[id="main"]'
+
+  news-and-updates: 
+    path: /newsroom/news-and-updates
+    selector: '[id="main"]'
+  ES-news-and-updates: 
+    path: /es/newsroom/news-and-updates
+    selector: '[id="main"]'
+  compass-newsletter: 
+    path: /newsroom/eNewsletter/april-2017
+    selector: '[id="main"]'
+  ES-compass-newsletter: 
+    path: /es/newsroom/eNewsletter/april-2017
+    selector: '[id="main"]'
+
+  get-involved:
+    path: /get-involved
+    selector: '[id="main"]'
+  ES-get-involved: 
+    path: /es/involúcrese
+    selector: '[id="main"]'
+  become-an-advocate:
+    path: /get-involved#become-an-advocate
+    selector: '[id="main"]'
+  ES-become-an-advocate:
+    path: /es/involúcrese#conviértase-en-un-representante
+    selector: '[id="main"]'
+  become-an-affiliate:
+    path: /get-involved#become-an-affiliate
+    selector: '[id="main"]'
+  ES-become-an-affiliate:
+    path: /es/involúcrese#conviértase-en-un-afiliado
+    selector: '[id="main"]'
+  link-to-us:
+    path: /get-involved#link-to-us
+    selector: '[id="main"]'
+  ES-link-to-us:
+    path: /es/involúcrese#enlace-su-sitio-al-nuestro
+    selector: '[id="main"]'
+
+  about-us: 
+    path: /about-us
+    selector: '[id="main"]'
+  ES-about-us: 
+    path: /es/sobre-nosotros
+    selector: '[id="main"]'
+  our-mission:
+    path: /about-us#our-mission
+  ES-our-mission:
+    path: /es/sobre-nosotros#nuestra-misión
+  our-history:
+    path: /about-us#our-history
+  ES-our-history:
+    path: /es/sobre-nosotros#nuestra-historia
+  our-partners:
+    path: /about-us#our-partners
+  ES-our-partners:
+    path: /es/sobre-nosotros#nuestros-socios
+  become-a-partner: 
+    path: /about-us#become-a-partner
+  ES-become-a-partner: 
+    path: /es/sobre-nosotros#conviértase-en-un-socio
+  our-platform: 
+    path: /about-us#our-platform
+  ES-platform: 
+    path: /es/sobre-nosotros#nuestra-plataforma
+  recognition: 
+    path: /about-us#recognition
+  ES-recognition: 
+    path: /es/sobre-nosotros#reconocimiento
+
+  faq: 
+    path: /help/faqs
+    selector: '[id="main"]'
+  ES-faq: 
+    path: /es/help/faqs
+    selector: '[id="main"]'
+  contact-us: 
+    path: /help/contact-us
+    selector: '[id="main"]'
+  ES-contact-us: 
+    path: /es/help/contact-us
+    selector: '[id="main"]'
+  privacy-and-terms: 
+    path: /about/privacy-and-terms-use
+    selector: '[id="main"]'
+  ES-privacy-and-terms: 
+    path: /es/privacidad-y-términos-de-uso
+    selector: '[id="main"]'

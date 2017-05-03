@@ -1,0 +1,10 @@
+#ssabest.benefits.gov compare test to origin
+
+# run with "wraith capture configs/SSA/SSA_test_to_origin-staging.yaml"
+
+imports: "settings_SSA.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  test: "https://test.ssabest.benefits.gov"
+  origin-staging: "https://origin-staging.ssabest.benefits.gov"
