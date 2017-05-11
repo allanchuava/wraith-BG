@@ -1,0 +1,10 @@
+#Govloans.gov compare origin-staging to origin-www
+
+# run with "wraith capture configs/GL/GL_ES_origin-staging_to_origin-www.yaml"
+
+imports: "settings_GL_ES.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  origin-staging: "https://es.origin-staging.govloans.gov"
+  origin-www: "https://es.origin-www.govloans.gov"
