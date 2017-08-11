@@ -12,7 +12,7 @@
 
 # (required) The domains to take screenshots of.
 domains:
-  edit: "https://edit.benefits.gov"
+  origin-www: "https://origin-www.benefits.gov"
   prod: "https://www.benefits.gov"
 
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
@@ -66,10 +66,10 @@ paths:
     path: /es/newsroom/news-and-updates
     selector: '[id="main"]'
   compass-newsletter: 
-    path: /newsroom/eNewsletter/april-2017
+    path: /newsroom/eNewsletter/july-2017
     selector: '[id="main"]'
   ES-compass-newsletter: 
-    path: /es/newsroom/eNewsletter/april-2017
+    path: /es/newsroom/eNewsletter/july-2017
     selector: '[id="main"]'
 
   get-involved:

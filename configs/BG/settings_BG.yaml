@@ -89,10 +89,10 @@ paths:
     path: /es/newsroom/news-and-updates
     selector: '[id="main"]'
   compass-newsletter: 
-    path: /newsroom/eNewsletter/april-2017
+    path: /newsroom/eNewsletter/july-2017
     selector: '[id="main"]'
   ES-compass-newsletter: 
-    path: /es/newsroom/eNewsletter/april-2017
+    path: /es/newsroom/eNewsletter/july-2017
     selector: '[id="main"]'
 
   get-involved:
