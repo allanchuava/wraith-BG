@@ -1,0 +1,10 @@
+#Govloans.gov compare staging to prod
+
+# run with "wraith capture configs/GL/GL-EN-staging-to-prod.yaml"
+
+imports: "settings-GL-EN.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  staging: "https://staging.govloans.gov"
+  prod: "https://www.govloans.gov"

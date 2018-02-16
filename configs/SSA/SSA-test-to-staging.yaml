@@ -1,0 +1,10 @@
+#ssabest.benefits.gov compare test to staging
+
+# run with "wraith capture configs/SSA/SSA-test-to-staging.yaml"
+
+imports: "settings-SSA.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  test: "https://test.ssabest.benefits.gov"
+  staging: "https://statging.ssabest.benefits.gov"

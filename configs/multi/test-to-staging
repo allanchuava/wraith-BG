@@ -1,0 +1,4 @@
+configs/BG/BG-test-to-staging.yaml
+configs/GL/GL-EN-test-to-staging.yaml
+configs/GL/GL-ES-test-to-staging.yaml
+configs/SSA/SSA-test-to-staging.yaml

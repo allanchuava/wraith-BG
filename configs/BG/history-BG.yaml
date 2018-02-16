@@ -5,8 +5,8 @@
 # making sure your site's appearance remains consistent over
 # time.
 #
-# `wraith history configs/BG/history_BG.yaml` # generate base screenshots
-# `wraith latest configs/BG/history_BG.yaml`  # take new shots and compare
+# `wraith history configs/BG/history-BG.yaml` # generate base screenshots
+# `wraith latest configs/BG/history-BG.yaml`  # take new shots and compare
 #
 ##############################################################
 ##############################################################
@@ -62,12 +62,58 @@ paths:
   ES-news-and-updates: 
     path: /es/newsroom/news-and-updates
     selector: '[id="main"]'
-  compass-newsletter: 
-    path: /newsroom/eNewsletter/july-2017
+
+  #First 5 new articles on the first page of News & Updates
+  #Update every DR
+  #last updated 2/16/18
+  article-1: 
+    path: /newsroom/news-and-updates/article/326
     selector: '[id="main"]'
-  ES-compass-newsletter: 
-    path: /es/newsroom/eNewsletter/july-2017
+  article-2: 
+    path: /newsroom/news-and-updates/article/325
     selector: '[id="main"]'
+  article-3: 
+    path: /newsroom/news-and-updates/article/324
+    selector: '[id="main"]'
+  article-4: 
+    path: /newsroom/news-and-updates/article/323
+    selector: '[id="main"]'
+  article-5: 
+    path: /newsroom/news-and-updates/article/322
+    selector: '[id="main"]'
+
+  #Compass Newsletter
+  #Update every 3 months for each new release
+  compass-newsletter-Jan: 
+    path: /newsroom/eNewsletter/january-2018
+    selector: '[id="main"]'
+  ES-compass-newsletter-Jan: 
+    path: /es/newsroom/eNewsletter/january-2018
+    selector: '[id="main"]'
+
+  compass-newsletter-slider1-Jan: 
+    path: /newsroom/eNewsletter/january-2018#compass-slider/1
+    selector: '[id="main"]'
+  compass-newsletter-slider2-Jan: 
+    path: /newsroom/eNewsletter/january-2018#compass-slider/2
+    selector: '[id="main"]'
+  compass-newsletter-slider3-Jan: 
+    path: /newsroom/eNewsletter/january-2018#compass-slider/3
+    selector: '[id="main"]'
+  compass-newsletter-slider4-Jan: 
+    path: /newsroom/eNewsletter/january-2018#compass-slider/4
+    selector: '[id="main"]'
+  compass-newsletter-slider5-Jan: 
+    path: /newsroom/eNewsletter/january-2018#compass-slider/5
+    selector: '[id="main"]'
+  compass-newsletter-slider6-Jan: 
+    path: /newsroom/eNewsletter/january-2018#compass-slider/6
+    selector: '[id="main"]'
+  compass-newsletter-slider7-Jan: 
+    path: /newsroom/eNewsletter/january-2018#compass-slider/7
+    selector: '[id="main"]'
+
+  
 
   get-involved:
     path: /get-involved
@@ -143,6 +189,17 @@ paths:
   ES-privacy-and-terms: 
     path: /es/privacidad-y-términos-de-uso
     selector: '[id="main"]'
+
+
+  ######## BIDS
+  # BID-100:
+  #   path: /benefits/benefit-details/100
+  #   selector: '[id="main"]'
+  # BID-100-ES:
+  #   path: /es/benefits/benefit-details/100
+  #   selector: '[id="main"]'
+
+
 
 
  # clickable_guide__after_click:

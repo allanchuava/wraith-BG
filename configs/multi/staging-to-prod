@@ -1,0 +1,4 @@
+configs/BG/BG-staging-to-prod.yaml
+configs/GL/GL-EN-staging-to-prod.yaml
+configs/GL/GL-ES-staging-to-prod.yaml
+configs/SSA/SSA-staging-to-prod.yaml

@@ -7,7 +7,7 @@
 # to use Wraith in 'capture' mode, which is best suited to
 # comparing a test and live version of the same website.
 #
-# run with 'wraith capture configs/SSA/capture_SSA.yaml'
+# run with 'wraith capture configs/GL/capture-GL-EN.yaml'
 #
 ##############################################################
 ##############################################################
@@ -19,52 +19,34 @@ phantomjs_options: --ignore-ssl-errors=yes --ssl-protocol=tlsv1
 
 # (required) The domains to take screenshots of.
 domains:
-  current: "https://www.ssabest.benefits.gov"
-  new: "https://origin-www.ssabest.benefits.gov"
+  prod: "https://www.govloans.gov"
+  staging: "https://staging.govloans.gov"
 
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
-
 paths:
 
-  #SSABest Links
+  #GovLoans Links
   home:
     path: /
-    selector: ".js"
-  EShome:
-    path: /es
-    selector: ".js"
 
   browse-by-category: 
-    path: /benefits/browse-by-category
-    selector: ".js"
-  ES-browse-by-category: 
-    path: /es/benefits/browse-by-category
-    selector: ".js"
+    path: /loans/browse-by-category
   other-resources: 
-    path: /benefits/other-resources
-    selector: ".js"
-  ES-other-resources: 
-    path: /es/benefits/other-resources
-    selector: ".js"
-
+    path: /other-resources
+  overview:
+    path: /about/overview
+  link-to-govloans:
+    path: /about/link-to-govloans
   faq: 
     path: /help/faqs
-    selector: ".js"
-  ES-faq: 
-    path: /es/help/faqs
-    selector: ".js"
   contact-us: 
     path: /help/contact-us
-    selector: ".js"
-  ES-contact-us: 
-    path: /es/help/contact-us
-    selector: ".js"
+  glossary:
+    path: /help/glossary
   privacy-and-terms: 
-    path: /help/privacy-and-terms-of-use
-    selector: ".js"
-  ES-privacy-and-terms: 
-    path: /es/help/privacy-and-terms-of-use
-    selector: ".js"
+    path: /privacy-and-terms-of-use
+
+
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
 before_capture: 'javascript/wait--casper.js'
@@ -78,7 +60,7 @@ screen_widths:
 #before_capture: 'javascript/disable_javascript--phantom.js'
 
 # (required) The directory that your screenshots will be stored in
-directory: 'shots/capture/SSA'
+directory: 'shots/capture/GL_EN'
 
 # (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
 fuzz: '20%'

@@ -8,8 +8,8 @@
 # making sure your site's appearance remains consistent over
 # time.
 #
-# `wraith history configs/GL/history_GL_ES.yaml` # generate base screenshots
-# `wraith latest configs/GL/history_GL_ES.yaml`  # take new shots and compare
+# `wraith history configs/GL/history-GL-EN.yaml` # generate base screenshots
+# `wraith latest configs/GL/history-GL-EN.yaml`  # take new shots and compare
 #
 ##############################################################
 ##############################################################
@@ -21,31 +21,31 @@ phantomjs_options: --ignore-ssl-errors=yes --ssl-protocol=tlsv1
 
 # (required) The domain to take screenshots of.
 domains:
-  base: "https://es.govloans.gov"
+  base: "https://www.govloans.gov"
 
 # (required) The paths to capture. This particular config is using casperjs, so we can take screenshots of selectors rather than the entire page.
 paths:
 
-  #GovLoans Links ES
-  EShome:
-    path: "/"
+ #GovLoans Links
+  home:
+    path: /
 
-  ES-browse-by-category: 
-    path: "/loans/browse-by-category"
-  ES-other-resources: 
-    path: "/other-resources"
-  ES-overview:
-    path: "/about/overview"
-  ES-link-to-govloans:
-    path: "/about/link-to-govloans"  
-  ES-faq: 
-    path: "/help/faqs"
-  ES-contact-us: 
-    path: "/help/contact-us"
-  ES-glossary:
-    path: "/help/glossary"  
-  ES-privacy-and-terms: 
-    path: "/privacy-and-terms-of-use"
+  browse-by-category: 
+    path: /loans/browse-by-category
+  other-resources: 
+    path: /other-resources
+  overview:
+    path: /about/overview
+  link-to-govloans:
+    path: /about/link-to-govloans
+  faq: 
+    path: /help/faqs
+  contact-us: 
+    path: /help/contact-us
+  glossary:
+    path: /help/glossary
+  privacy-and-terms: 
+    path: /privacy-and-terms-of-use
 
 
  # clickable_guide__after_click:
@@ -65,10 +65,10 @@ screen_widths:
 resize_or_reload: 'resize'
 
 # (required for history mode, otherwise optional) The directory that your base screenshots will be stored in.
-history_dir: 'shots/base_shots/GL_ES'
+history_dir: 'shots/base_shots/GL_EN'
 
 # (required) The directory that your latest screenshots will be stored in
-directory: 'shots/current_shots/GL_ES'
+directory: 'shots/current_shots/GL_EN'
 
 # (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
 fuzz: '20%'

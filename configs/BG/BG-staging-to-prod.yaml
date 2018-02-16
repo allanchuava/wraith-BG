@@ -1,0 +1,10 @@
+#Benefits.gov staging to prod
+
+# run with "wraith capture configs/BG/BG-staging-to-prod.yaml"
+
+imports: "settings-BG.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  staging: "https://staging.benefits.gov"
+  prod: "https://www.benefits.gov"

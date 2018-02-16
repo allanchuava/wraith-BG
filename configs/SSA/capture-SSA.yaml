@@ -4,12 +4,10 @@
 # Feel free to amend for your own requirements.
 # ---
 # This particular config is intended to demonstrate how
-# to use Wraith in 'history' mode, which is best suited to
-# making sure your site's appearance remains consistent over
-# time.
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
 #
-# `wraith history configs/GL/history_GL_EN.yaml` # generate base screenshots
-# `wraith latest configs/GL/history_GL_EN.yaml`  # take new shots and compare
+# run with 'wraith capture configs/SSA/capture-SSA.yaml'
 #
 ##############################################################
 ##############################################################
@@ -19,39 +17,54 @@ browser: "casperjs"
 
 phantomjs_options: --ignore-ssl-errors=yes --ssl-protocol=tlsv1
 
-# (required) The domain to take screenshots of.
+# (required) The domains to take screenshots of.
 domains:
-  base: "https://www.govloans.gov"
+  prod: "https://ssabest.benefits.gov"
+  staging: "https://staging.ssabest.benefits.gov"
 
-# (required) The paths to capture. This particular config is using casperjs, so we can take screenshots of selectors rather than the entire page.
+# (required) The paths to capture. All paths should exist for both of the domains specified above.
+
 paths:
 
- #GovLoans Links
+  #SSABest Links
   home:
     path: /
+    selector: ".js"
+  EShome:
+    path: /es
+    selector: ".js"
 
   browse-by-category: 
-    path: /loans/browse-by-category
+    path: /benefits/browse-by-category
+    selector: ".js"
+  ES-browse-by-category: 
+    path: /es/benefits/browse-by-category
+    selector: ".js"
   other-resources: 
-    path: /other-resources
-  overview:
-    path: /about/overview
-  link-to-govloans:
-    path: /about/link-to-govloans
+    path: /benefits/other-resources
+    selector: ".js"
+  ES-other-resources: 
+    path: /es/benefits/other-resources
+    selector: ".js"
+
   faq: 
     path: /help/faqs
+    selector: ".js"
+  ES-faq: 
+    path: /es/help/faqs
+    selector: ".js"
   contact-us: 
     path: /help/contact-us
-  glossary:
-    path: /help/glossary
+    selector: ".js"
+  ES-contact-us: 
+    path: /es/help/contact-us
+    selector: ".js"
   privacy-and-terms: 
-    path: /privacy-and-terms-of-use
-
-
- # clickable_guide__after_click:
-   # path: /news/entertainment-arts-27221191
-   # selector: '.idt__news'
-   # before_capture: 'javascript/interact--phantom.js' # (optional) JavaScript file to execute before taking the screenshot of this path.
+    path: /help/privacy-and-terms-of-use
+    selector: ".js"
+  ES-privacy-and-terms: 
+    path: /es/help/privacy-and-terms-of-use
+    selector: ".js"
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
 before_capture: 'javascript/wait--casper.js'
@@ -61,14 +74,11 @@ screen_widths:
   #- 450x650
   - 1280
 
-# (optional) Resize to each screen width (efficient), or reload at each screen width (costly). Default: 'reload'
-resize_or_reload: 'resize'
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
 
-# (required for history mode, otherwise optional) The directory that your base screenshots will be stored in.
-history_dir: 'shots/base_shots/GL_EN'
-
-# (required) The directory that your latest screenshots will be stored in
-directory: 'shots/current_shots/GL_EN'
+# (required) The directory that your screenshots will be stored in
+directory: 'shots/capture/SSA'
 
 # (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
 fuzz: '20%'
@@ -89,12 +99,3 @@ gallery:
 #   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
 # Note: different screen widths are always grouped together.
 mode: diffs_first
-
-# (optional) Choose to run Wraith in verbose mode, for easier debugging. Default: false
-verbose: true
-
-# (optional) Color to highlight the image diff. Default: 'blue'
-highlight_color: red
-
-# (optional) Parameters to pass to Phantom/Casper command line. Default: '--ignore-ssl-errors=true --ssl-protocol=tlsv1'
-#phantomjs_options: ''

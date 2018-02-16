@@ -8,8 +8,8 @@
 # making sure your site's appearance remains consistent over
 # time.
 #
-# `wraith history configs/SSA/history_SSA.yaml` # generate base screenshots
-# `wraith latest configs/SSA/history_SSA.yaml`  # take new shots and compare
+# `wraith history configs/SSA/history-SSA.yaml` # generate base screenshots
+# `wraith latest configs/SSA/history-SSA.yaml`  # take new shots and compare
 #
 ##############################################################
 ##############################################################

@@ -1,0 +1,10 @@
+#Benefits.gov test to staging
+
+# run with "wraith capture configs/BG/BG-test-to-staging.yaml"
+
+imports: "settings-BG.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  test: "https://test.benefits.gov"
+  staging: "https://staging.benefits.gov"

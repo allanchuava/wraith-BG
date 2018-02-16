@@ -4,7 +4,7 @@
 # to use Wraith in 'capture' mode, which is best suited to
 # comparing a test and live version of the same website.
 #
-# run with "wraith capture configs/BG/capture_BG.yaml"
+# run with "wraith capture configs/BG/capture-BG.yaml"
 #
 ##############################################################
 ##############################################################
@@ -12,19 +12,12 @@
 
 # (required) The domains to take screenshots of.
 domains:
-  edit: "https://edit.benefits.gov"
   prod: "https://www.benefits.gov"
+  staging: "https://staging.benefits.gov"
 
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
 
 paths:
-  # header:
-  #   path: /
-  #   selector: ".header"
-  # footer:
-  #   path: /
-  #   selector: ".region.region-footer"
-
 
   #Benefits.gov links
   home:
@@ -59,101 +52,106 @@ paths:
     path: /es/benefits/other-resources
     selector: '[id="main"]'
 
-  # news-and-updates: 
-  #   path: /newsroom/news-and-updates
-  #   selector: '[id="main"]'
-  # ES-news-and-updates: 
-  #   path: /es/newsroom/news-and-updates
-  #   selector: '[id="main"]'
-  # compass-newsletter: 
-  #   path: /newsroom/eNewsletter/april-2017
-  #   selector: '[id="main"]'
-  # ES-compass-newsletter: 
-  #   path: /es/newsroom/eNewsletter/april-2017
-  #   selector: '[id="main"]'
+  news-and-updates: 
+    path: /newsroom/news-and-updates
+    selector: '[id="main"]'
+  ES-news-and-updates: 
+    path: /es/newsroom/news-and-updates
+    selector: '[id="main"]'
+  compass-newsletter: 
+    path: /newsroom/eNewsletter/january-2018
+    selector: '[id="main"]'
+  ES-compass-newsletter: 
+    path: /es/newsroom/eNewsletter/january-2018
+    selector: '[id="main"]'
 
-  # get-involved:
-  #   path: /get-involved
-  #   selector: '[id="main"]'
-  # ES-get-involved: 
-  #   path: /es/involúcrese
-  #   selector: '[id="main"]'
-  # become-an-advocate:
-  #   path: /get-involved#become-an-advocate
-  #   selector: '[id="main"]'
-  # ES-become-an-advocate:
-  #   path: /es/involúcrese#conviértase-en-un-representante
-  #   selector: '[id="main"]'
-  # become-an-affiliate:
-  #   path: /get-involved#become-an-affiliate
-  #   selector: '[id="main"]'
-  # ES-become-an-affiliate:
-  #   path: /es/involúcrese#conviértase-en-un-afiliado
-  #   selector: '[id="main"]'
-  # link-to-us:
-  #   path: /get-involved#link-to-us
-  #   selector: '[id="main"]'
-  # ES-link-to-us:
-  #   path: /es/involúcrese#enlace-su-sitio-al-nuestro
-  #   selector: '[id="main"]'
+  get-involved:
+    path: /get-involved
+    selector: '[id="main"]'
+  ES-get-involved: 
+    path: /es/involúcrese
+    selector: '[id="main"]'
+  become-an-advocate:
+    path: /get-involved#become-an-advocate
+    selector: '[id="main"]'
+  ES-become-an-advocate:
+    path: /es/involúcrese#conviértase-en-un-representante
+    selector: '[id="main"]'
+  become-an-affiliate:
+    path: /get-involved#become-an-affiliate
+    selector: '[id="main"]'
+  ES-become-an-affiliate:
+    path: /es/involúcrese#conviértase-en-un-afiliado
+    selector: '[id="main"]'
+  link-to-us:
+    path: /get-involved#link-to-us
+    selector: '[id="main"]'
+  ES-link-to-us:
+    path: /es/involúcrese#enlace-su-sitio-al-nuestro
+    selector: '[id="main"]'
 
-  # about-us: 
-  #   path: /about-us
-  #   selector: '[id="main"]'
-  # ES-about-us: 
-  #   path: /es/sobre-nosotros
-  #   selector: '[id="main"]'
-  # our-mission:
-  #   path: /about-us#our-mission
-  # ES-our-mission:
-  #   path: /es/sobre-nosotros#nuestra-misión
-  # our-history:
-  #   path: /about-us#our-history
-  # ES-our-history:
-  #   path: /es/sobre-nosotros#nuestra-historia
-  # our-partners:
-  #   path: /about-us#our-partners
-  # ES-our-partners:
-  #   path: /es/sobre-nosotros#nuestros-socios
-  # become-a-partner: 
-  #   path: /about-us#become-a-partner
-  # ES-become-a-partner: 
-  #   path: /es/sobre-nosotros#conviértase-en-un-socio
-  # our-platform: 
-  #   path: /about-us#our-platform
-  # ES-platform: 
-  #   path: /es/sobre-nosotros#nuestra-plataforma
-  # recognition: 
-  #   path: /about-us#recognition
-  # ES-recognition: 
-  #   path: /es/sobre-nosotros#reconocimiento
+  about-us: 
+    path: /about-us
+    selector: '[id="main"]'
+  ES-about-us: 
+    path: /es/sobre-nosotros
+    selector: '[id="main"]'
+  our-mission:
+    path: /about-us#our-mission
+  ES-our-mission:
+    path: /es/sobre-nosotros#nuestra-misión
+  our-history:
+    path: /about-us#our-history
+  ES-our-history:
+    path: /es/sobre-nosotros#nuestra-historia
+  our-partners:
+    path: /about-us#our-partners
+  ES-our-partners:
+    path: /es/sobre-nosotros#nuestros-socios
+  become-a-partner: 
+    path: /about-us#become-a-partner
+  ES-become-a-partner: 
+    path: /es/sobre-nosotros#conviértase-en-un-socio
+  our-platform: 
+    path: /about-us#our-platform
+  ES-platform: 
+    path: /es/sobre-nosotros#nuestra-plataforma
+  recognition: 
+    path: /about-us#recognition
+  ES-recognition: 
+    path: /es/sobre-nosotros#reconocimiento
 
-  # faq: 
-  #   path: /help/faqs
-  #   selector: '[id="main"]'
-  # ES-faq: 
-  #   path: /es/help/faqs
-  #   selector: '[id="main"]'
-  # contact-us: 
-  #   path: /help/contact-us
-  #   selector: '[id="main"]'
-  # ES-contact-us: 
-  #   path: /es/help/contact-us
-  #   selector: '[id="main"]'
-  # privacy-and-terms: 
-  #   path: /about/privacy-and-terms-use
-  #   selector: '[id="main"]'
-  # ES-privacy-and-terms: 
-  #   path: /es/privacidad-y-términos-de-uso
-  #   selector: '[id="main"]'
+  faq: 
+    path: /help/faqs
+    selector: '[id="main"]'
+  ES-faq: 
+    path: /es/help/faqs
+    selector: '[id="main"]'
+  contact-us: 
+    path: /help/contact-us
+    selector: '[id="main"]'
+  ES-contact-us: 
+    path: /es/help/contact-us
+    selector: '[id="main"]'
+  privacy-and-terms: 
+    path: /about/privacy-and-terms-use
+    selector: '[id="main"]'
+  ES-privacy-and-terms: 
+    path: /es/privacidad-y-términos-de-uso
+    selector: '[id="main"]'
 
   ################################################################
   # Place BIDs to compare here
   ################################################################
   
+  # BID-290:
+  #   path: /benefits/benefit-details/290
+  #   selector: '[id="main"]'
+  # BID-290-ES:
+  #   path: /es/benefits/benefit-details/290
+  #   selector: '[id="main"]'
 
 
- 
 
 
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'

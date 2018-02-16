@@ -1,0 +1,10 @@
+#Govloans.gov compare test to staging
+
+# run with "wraith capture configs/GL/GL-EN-test-to-staging.yaml"
+
+imports: "settings-GL-EN.yaml"
+
+# (required) The domains to take screenshots of.
+domains:
+  test: "https://test.govloans.gov"
+  staging: "https://staging.govloans.gov"

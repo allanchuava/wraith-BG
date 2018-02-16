@@ -7,7 +7,7 @@
 # to use Wraith in 'capture' mode, which is best suited to
 # comparing a test and live version of the same website.
 #
-# run with 'wraith capture configs/GL/capture_GL_EN.yaml'
+# run with 'wraith capture configs/GL/capture-GL-ES.yaml'
 #
 ##############################################################
 ##############################################################
@@ -19,33 +19,32 @@ phantomjs_options: --ignore-ssl-errors=yes --ssl-protocol=tlsv1
 
 # (required) The domains to take screenshots of.
 domains:
-  current: "https://www.govloans.gov"
-  new: "https://origin-www.govloans.gov"
+  prod: "https://es.govloans.gov"
+  staging: "https://es.staging.govloans.gov"
 
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
 paths:
 
-  #GovLoans Links
-  home:
+  #GovLoans Links ES
+  EShome:
     path: /
 
-  browse-by-category: 
+  ES-browse-by-category: 
     path: /loans/browse-by-category
-  other-resources: 
+  ES-other-resources: 
     path: /other-resources
-  overview:
+  ES-overview:
     path: /about/overview
-  link-to-govloans:
-    path: /about/link-to-govloans
-  faq: 
+  ES-link-to-govloans:
+    path: /about/link-to-govloans  
+  ES-faq: 
     path: /help/faqs
-  contact-us: 
+  ES-contact-us: 
     path: /help/contact-us
-  glossary:
-    path: /help/glossary
-  privacy-and-terms: 
+  ES-glossary:
+    path: /help/glossary  
+  ES-privacy-and-terms: 
     path: /privacy-and-terms-of-use
-
 
 
 # (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
@@ -60,7 +59,7 @@ screen_widths:
 #before_capture: 'javascript/disable_javascript--phantom.js'
 
 # (required) The directory that your screenshots will be stored in
-directory: 'shots/capture/GL_EN'
+directory: 'shots/capture/GL_ES'
 
 # (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
 fuzz: '20%'
