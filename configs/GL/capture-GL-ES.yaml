@@ -15,7 +15,7 @@
 # (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
 browser: "casperjs"
 
-#phantomjs_options: --ignore-ssl-errors=yes --ssl-protocol=tlsv1
+phantomjs_options: --ignore-ssl-errors=yes
 
 # (required) The domains to take screenshots of.
 domains:
