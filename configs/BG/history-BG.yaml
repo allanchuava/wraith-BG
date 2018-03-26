@@ -66,21 +66,21 @@ paths:
 
   #First 5 new articles on the first page of News & Updates
   #Update every DR
-  #last updated 2/16/18
+  #last updated 3/26/18
   article-1: 
-    path: /newsroom/news-and-updates/article/326
+    path: /newsroom/news-and-updates/article/328
     selector: '[id="main"]'
   article-2: 
-    path: /newsroom/news-and-updates/article/325
+    path: /newsroom/news-and-updates/article/327
     selector: '[id="main"]'
   article-3: 
-    path: /newsroom/news-and-updates/article/324
+    path: /newsroom/news-and-updates/article/326
     selector: '[id="main"]'
   article-4: 
-    path: /newsroom/news-and-updates/article/323
+    path: /newsroom/news-and-updates/article/325
     selector: '[id="main"]'
   article-5: 
-    path: /newsroom/news-and-updates/article/322
+    path: /newsroom/news-and-updates/article/324
     selector: '[id="main"]'
 
   #Compass Newsletter
