@@ -66,52 +66,52 @@ paths:
 
   #First 5 new articles on the first page of News & Updates
   #Update every DR
-  #last updated 3/26/18
+  #last updated 4/17/18
   article-1: 
-    path: /newsroom/news-and-updates/article/328
+    path: /newsroom/news-and-updates/article/334
     selector: '[id="main"]'
   article-2: 
-    path: /newsroom/news-and-updates/article/327
+    path: /newsroom/news-and-updates/article/333
     selector: '[id="main"]'
   article-3: 
-    path: /newsroom/news-and-updates/article/326
+    path: /newsroom/news-and-updates/article/332
     selector: '[id="main"]'
   article-4: 
-    path: /newsroom/news-and-updates/article/325
+    path: /newsroom/news-and-updates/article/331
     selector: '[id="main"]'
   article-5: 
-    path: /newsroom/news-and-updates/article/324
+    path: /newsroom/news-and-updates/article/330
     selector: '[id="main"]'
 
   #Compass Newsletter
   #Update every 3 months for each new release
-  compass-newsletter-Jan: 
-    path: /newsroom/eNewsletter/january-2018
+  compass-newsletter-April: 
+    path: /newsroom/eNewsletter/april-2018
     selector: '[id="main"]'
-  ES-compass-newsletter-Jan: 
-    path: /es/newsroom/eNewsletter/january-2018
+  ES-compass-newsletter-April: 
+    path: /es/newsroom/eNewsletter/april-2018
     selector: '[id="main"]'
 
-  compass-newsletter-slider1-Jan: 
-    path: /newsroom/eNewsletter/january-2018#compass-slider/1
+  compass-newsletter-slider1-April: 
+    path: /newsroom/eNewsletter/april-2018#compass-slider/1
     selector: '[id="main"]'
-  compass-newsletter-slider2-Jan: 
-    path: /newsroom/eNewsletter/january-2018#compass-slider/2
+  compass-newsletter-slider2-April: 
+    path: /newsroom/eNewsletter/april-2018#compass-slider/2
     selector: '[id="main"]'
-  compass-newsletter-slider3-Jan: 
-    path: /newsroom/eNewsletter/january-2018#compass-slider/3
+  compass-newsletter-slider3-April: 
+    path: /newsroom/eNewsletter/april-2018#compass-slider/3
     selector: '[id="main"]'
-  compass-newsletter-slider4-Jan: 
-    path: /newsroom/eNewsletter/january-2018#compass-slider/4
+  compass-newsletter-slider4-April: 
+    path: /newsroom/eNewsletter/april-2018#compass-slider/4
     selector: '[id="main"]'
-  compass-newsletter-slider5-Jan: 
-    path: /newsroom/eNewsletter/january-2018#compass-slider/5
+  compass-newsletter-slider5-April: 
+    path: /newsroom/eNewsletter/april-2018#compass-slider/5
     selector: '[id="main"]'
-  compass-newsletter-slider6-Jan: 
-    path: /newsroom/eNewsletter/january-2018#compass-slider/6
+  compass-newsletter-slider6-April: 
+    path: /newsroom/eNewsletter/april-2018#compass-slider/6
     selector: '[id="main"]'
-  compass-newsletter-slider7-Jan: 
-    path: /newsroom/eNewsletter/january-2018#compass-slider/7
+  compass-newsletter-slider7-April: 
+    path: /newsroom/eNewsletter/april-2018#compass-slider/7
     selector: '[id="main"]'
 
   
