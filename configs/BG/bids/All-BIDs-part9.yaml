@@ -1,0 +1,766 @@
+##############################################################
+##############################################################
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# run with "wraith capture configs/BG/bids/All-BIDs-part9.yaml"
+#
+##############################################################
+##############################################################
+
+# (required) The domains to take screenshots of.
+domains:
+  prod: "https://www.benefits.gov"
+  staging: "https://staging.benefits.gov"
+
+# (required) The paths to capture. All paths should exist for both of the domains specified above.
+
+paths:
+
+
+  BID-4400:
+    path: /benefits/benefit-details/4400
+    selector: '[id="main"]'
+  BID-4400-ES:
+    path: /es/benefits/benefit-details/4400
+    selector: '[id="main"]'
+
+  BID-4402:
+    path: /benefits/benefit-details/4402
+    selector: '[id="main"]'
+  BID-4402-ES:
+    path: /es/benefits/benefit-details/4402
+    selector: '[id="main"]'
+
+  BID-4404:
+    path: /benefits/benefit-details/4404
+    selector: '[id="main"]'
+  BID-4404-ES:
+    path: /es/benefits/benefit-details/4404
+    selector: '[id="main"]'
+
+  BID-4406:
+    path: /benefits/benefit-details/4406
+    selector: '[id="main"]'
+  BID-4406-ES:
+    path: /es/benefits/benefit-details/4406
+    selector: '[id="main"]'
+
+  BID-4408:
+    path: /benefits/benefit-details/4408
+    selector: '[id="main"]'
+  BID-4408-ES:
+    path: /es/benefits/benefit-details/4408
+    selector: '[id="main"]'
+
+  BID-4410:
+    path: /benefits/benefit-details/4410
+    selector: '[id="main"]'
+  BID-4410-ES:
+    path: /es/benefits/benefit-details/4410
+    selector: '[id="main"]'
+
+  BID-4412:
+    path: /benefits/benefit-details/4412
+    selector: '[id="main"]'
+  BID-4412-ES:
+    path: /es/benefits/benefit-details/4412
+    selector: '[id="main"]'
+
+  BID-4416:
+    path: /benefits/benefit-details/4416
+    selector: '[id="main"]'
+  BID-4416-ES:
+    path: /es/benefits/benefit-details/4416
+    selector: '[id="main"]'
+
+  BID-4418:
+    path: /benefits/benefit-details/4418
+    selector: '[id="main"]'
+  BID-4418-ES:
+    path: /es/benefits/benefit-details/4418
+    selector: '[id="main"]'
+
+  BID-4424:
+    path: /benefits/benefit-details/4424
+    selector: '[id="main"]'
+  BID-4424-ES:
+    path: /es/benefits/benefit-details/4424
+    selector: '[id="main"]'
+
+  BID-4426:
+    path: /benefits/benefit-details/4426
+    selector: '[id="main"]'
+  BID-4426-ES:
+    path: /es/benefits/benefit-details/4426
+    selector: '[id="main"]'
+
+  BID-4428:
+    path: /benefits/benefit-details/4428
+    selector: '[id="main"]'
+  BID-4428-ES:
+    path: /es/benefits/benefit-details/4428
+    selector: '[id="main"]'
+
+  BID-4430:
+    path: /benefits/benefit-details/4430
+    selector: '[id="main"]'
+  BID-4430-ES:
+    path: /es/benefits/benefit-details/4430
+    selector: '[id="main"]'
+
+  BID-4432:
+    path: /benefits/benefit-details/4432
+    selector: '[id="main"]'
+  BID-4432-ES:
+    path: /es/benefits/benefit-details/4432
+    selector: '[id="main"]'
+
+  BID-4434:
+    path: /benefits/benefit-details/4434
+    selector: '[id="main"]'
+  BID-4434-ES:
+    path: /es/benefits/benefit-details/4434
+    selector: '[id="main"]'
+
+  BID-4440:
+    path: /benefits/benefit-details/4440
+    selector: '[id="main"]'
+  BID-4440-ES:
+    path: /es/benefits/benefit-details/4440
+    selector: '[id="main"]'
+
+  BID-4573:
+    path: /benefits/benefit-details/4573
+    selector: '[id="main"]'
+  BID-4573-ES:
+    path: /es/benefits/benefit-details/4573
+    selector: '[id="main"]'
+
+  BID-4583:
+    path: /benefits/benefit-details/4583
+    selector: '[id="main"]'
+  BID-4583-ES:
+    path: /es/benefits/benefit-details/4583
+    selector: '[id="main"]'
+
+  BID-4585:
+    path: /benefits/benefit-details/4585
+    selector: '[id="main"]'
+  BID-4585-ES:
+    path: /es/benefits/benefit-details/4585
+    selector: '[id="main"]'
+
+  BID-4587:
+    path: /benefits/benefit-details/4587
+    selector: '[id="main"]'
+  BID-4587-ES:
+    path: /es/benefits/benefit-details/4587
+    selector: '[id="main"]'
+
+  BID-4591:
+    path: /benefits/benefit-details/4591
+    selector: '[id="main"]'
+  BID-4591-ES:
+    path: /es/benefits/benefit-details/4591
+    selector: '[id="main"]'
+
+  BID-4593:
+    path: /benefits/benefit-details/4593
+    selector: '[id="main"]'
+  BID-4593-ES:
+    path: /es/benefits/benefit-details/4593
+    selector: '[id="main"]'
+
+  BID-4624:
+    path: /benefits/benefit-details/4624
+    selector: '[id="main"]'
+  BID-4624-ES:
+    path: /es/benefits/benefit-details/4624
+    selector: '[id="main"]'
+
+  BID-4625:
+    path: /benefits/benefit-details/4625
+    selector: '[id="main"]'
+  BID-4625-ES:
+    path: /es/benefits/benefit-details/4625
+    selector: '[id="main"]'
+
+  BID-4631:
+    path: /benefits/benefit-details/4631
+    selector: '[id="main"]'
+  BID-4631-ES:
+    path: /es/benefits/benefit-details/4631
+    selector: '[id="main"]'
+
+  BID-4632:
+    path: /benefits/benefit-details/4632
+    selector: '[id="main"]'
+  BID-4632-ES:
+    path: /es/benefits/benefit-details/4632
+    selector: '[id="main"]'
+
+  BID-4635:
+    path: /benefits/benefit-details/4635
+    selector: '[id="main"]'
+  BID-4635-ES:
+    path: /es/benefits/benefit-details/4635
+    selector: '[id="main"]'
+
+  BID-4696:
+    path: /benefits/benefit-details/4696
+    selector: '[id="main"]'
+  BID-4696-ES:
+    path: /es/benefits/benefit-details/4696
+    selector: '[id="main"]'
+
+  BID-4705:
+    path: /benefits/benefit-details/4705
+    selector: '[id="main"]'
+  BID-4705-ES:
+    path: /es/benefits/benefit-details/4705
+    selector: '[id="main"]'
+
+  BID-4727:
+    path: /benefits/benefit-details/4727
+    selector: '[id="main"]'
+  BID-4727-ES:
+    path: /es/benefits/benefit-details/4727
+    selector: '[id="main"]'
+
+  BID-4731:
+    path: /benefits/benefit-details/4731
+    selector: '[id="main"]'
+  BID-4731-ES:
+    path: /es/benefits/benefit-details/4731
+    selector: '[id="main"]'
+
+  BID-4733:
+    path: /benefits/benefit-details/4733
+    selector: '[id="main"]'
+  BID-4733-ES:
+    path: /es/benefits/benefit-details/4733
+    selector: '[id="main"]'
+
+  BID-4735:
+    path: /benefits/benefit-details/4735
+    selector: '[id="main"]'
+  BID-4735-ES:
+    path: /es/benefits/benefit-details/4735
+    selector: '[id="main"]'
+
+  BID-4737:
+    path: /benefits/benefit-details/4737
+    selector: '[id="main"]'
+  BID-4737-ES:
+    path: /es/benefits/benefit-details/4737
+    selector: '[id="main"]'
+
+  BID-4739:
+    path: /benefits/benefit-details/4739
+    selector: '[id="main"]'
+  BID-4739-ES:
+    path: /es/benefits/benefit-details/4739
+    selector: '[id="main"]'
+
+  BID-4741:
+    path: /benefits/benefit-details/4741
+    selector: '[id="main"]'
+  BID-4741-ES:
+    path: /es/benefits/benefit-details/4741
+    selector: '[id="main"]'
+
+  BID-4743:
+    path: /benefits/benefit-details/4743
+    selector: '[id="main"]'
+  BID-4743-ES:
+    path: /es/benefits/benefit-details/4743
+    selector: '[id="main"]'
+
+  BID-4745:
+    path: /benefits/benefit-details/4745
+    selector: '[id="main"]'
+  BID-4745-ES:
+    path: /es/benefits/benefit-details/4745
+    selector: '[id="main"]'
+
+  BID-4747:
+    path: /benefits/benefit-details/4747
+    selector: '[id="main"]'
+  BID-4747-ES:
+    path: /es/benefits/benefit-details/4747
+    selector: '[id="main"]'
+
+  BID-4749:
+    path: /benefits/benefit-details/4749
+    selector: '[id="main"]'
+  BID-4749-ES:
+    path: /es/benefits/benefit-details/4749
+    selector: '[id="main"]'
+
+  BID-4753:
+    path: /benefits/benefit-details/4753
+    selector: '[id="main"]'
+  BID-4753-ES:
+    path: /es/benefits/benefit-details/4753
+    selector: '[id="main"]'
+
+  BID-4755:
+    path: /benefits/benefit-details/4755
+    selector: '[id="main"]'
+  BID-4755-ES:
+    path: /es/benefits/benefit-details/4755
+    selector: '[id="main"]'
+
+  BID-4757:
+    path: /benefits/benefit-details/4757
+    selector: '[id="main"]'
+  BID-4757-ES:
+    path: /es/benefits/benefit-details/4757
+    selector: '[id="main"]'
+
+  BID-4759:
+    path: /benefits/benefit-details/4759
+    selector: '[id="main"]'
+  BID-4759-ES:
+    path: /es/benefits/benefit-details/4759
+    selector: '[id="main"]'
+
+  BID-4763:
+    path: /benefits/benefit-details/4763
+    selector: '[id="main"]'
+  BID-4763-ES:
+    path: /es/benefits/benefit-details/4763
+    selector: '[id="main"]'
+
+  BID-4765:
+    path: /benefits/benefit-details/4765
+    selector: '[id="main"]'
+  BID-4765-ES:
+    path: /es/benefits/benefit-details/4765
+    selector: '[id="main"]'
+
+  BID-4767:
+    path: /benefits/benefit-details/4767
+    selector: '[id="main"]'
+  BID-4767-ES:
+    path: /es/benefits/benefit-details/4767
+    selector: '[id="main"]'
+
+  BID-4771:
+    path: /benefits/benefit-details/4771
+    selector: '[id="main"]'
+  BID-4771-ES:
+    path: /es/benefits/benefit-details/4771
+    selector: '[id="main"]'
+
+  BID-4773:
+    path: /benefits/benefit-details/4773
+    selector: '[id="main"]'
+  BID-4773-ES:
+    path: /es/benefits/benefit-details/4773
+    selector: '[id="main"]'
+
+  BID-4776:
+    path: /benefits/benefit-details/4776
+    selector: '[id="main"]'
+  BID-4776-ES:
+    path: /es/benefits/benefit-details/4776
+    selector: '[id="main"]'
+
+  BID-4778:
+    path: /benefits/benefit-details/4778
+    selector: '[id="main"]'
+  BID-4778-ES:
+    path: /es/benefits/benefit-details/4778
+    selector: '[id="main"]'
+
+  BID-4782:
+    path: /benefits/benefit-details/4782
+    selector: '[id="main"]'
+  BID-4782-ES:
+    path: /es/benefits/benefit-details/4782
+    selector: '[id="main"]'
+
+  BID-5864:
+    path: /benefits/benefit-details/5864
+    selector: '[id="main"]'
+  BID-5864-ES:
+    path: /es/benefits/benefit-details/5864
+    selector: '[id="main"]'
+
+  BID-5867:
+    path: /benefits/benefit-details/5867
+    selector: '[id="main"]'
+  BID-5867-ES:
+    path: /es/benefits/benefit-details/5867
+    selector: '[id="main"]'
+
+  BID-5868:
+    path: /benefits/benefit-details/5868
+    selector: '[id="main"]'
+  BID-5868-ES:
+    path: /es/benefits/benefit-details/5868
+    selector: '[id="main"]'
+
+  BID-5869:
+    path: /benefits/benefit-details/5869
+    selector: '[id="main"]'
+  BID-5869-ES:
+    path: /es/benefits/benefit-details/5869
+    selector: '[id="main"]'
+
+  BID-5870:
+    path: /benefits/benefit-details/5870
+    selector: '[id="main"]'
+  BID-5870-ES:
+    path: /es/benefits/benefit-details/5870
+    selector: '[id="main"]'
+
+  BID-5872:
+    path: /benefits/benefit-details/5872
+    selector: '[id="main"]'
+  BID-5872-ES:
+    path: /es/benefits/benefit-details/5872
+    selector: '[id="main"]'
+
+  BID-5876:
+    path: /benefits/benefit-details/5876
+    selector: '[id="main"]'
+  BID-5876-ES:
+    path: /es/benefits/benefit-details/5876
+    selector: '[id="main"]'
+
+  BID-5878:
+    path: /benefits/benefit-details/5878
+    selector: '[id="main"]'
+  BID-5878-ES:
+    path: /es/benefits/benefit-details/5878
+    selector: '[id="main"]'
+
+  BID-5879:
+    path: /benefits/benefit-details/5879
+    selector: '[id="main"]'
+  BID-5879-ES:
+    path: /es/benefits/benefit-details/5879
+    selector: '[id="main"]'
+
+  BID-5880:
+    path: /benefits/benefit-details/5880
+    selector: '[id="main"]'
+  BID-5880-ES:
+    path: /es/benefits/benefit-details/5880
+    selector: '[id="main"]'
+
+  BID-5881:
+    path: /benefits/benefit-details/5881
+    selector: '[id="main"]'
+  BID-5881-ES:
+    path: /es/benefits/benefit-details/5881
+    selector: '[id="main"]'
+
+  BID-5882:
+    path: /benefits/benefit-details/5882
+    selector: '[id="main"]'
+  BID-5882-ES:
+    path: /es/benefits/benefit-details/5882
+    selector: '[id="main"]'
+
+  BID-5885:
+    path: /benefits/benefit-details/5885
+    selector: '[id="main"]'
+  BID-5885-ES:
+    path: /es/benefits/benefit-details/5885
+    selector: '[id="main"]'
+
+  BID-5888:
+    path: /benefits/benefit-details/5888
+    selector: '[id="main"]'
+  BID-5888-ES:
+    path: /es/benefits/benefit-details/5888
+    selector: '[id="main"]'
+
+  BID-5889:
+    path: /benefits/benefit-details/5889
+    selector: '[id="main"]'
+  BID-5889-ES:
+    path: /es/benefits/benefit-details/5889
+    selector: '[id="main"]'
+
+  BID-5890:
+    path: /benefits/benefit-details/5890
+    selector: '[id="main"]'
+  BID-5890-ES:
+    path: /es/benefits/benefit-details/5890
+    selector: '[id="main"]'
+
+  BID-5891:
+    path: /benefits/benefit-details/5891
+    selector: '[id="main"]'
+  BID-5891-ES:
+    path: /es/benefits/benefit-details/5891
+    selector: '[id="main"]'
+
+  BID-5892:
+    path: /benefits/benefit-details/5892
+    selector: '[id="main"]'
+  BID-5892-ES:
+    path: /es/benefits/benefit-details/5892
+    selector: '[id="main"]'
+
+  BID-5893:
+    path: /benefits/benefit-details/5893
+    selector: '[id="main"]'
+  BID-5893-ES:
+    path: /es/benefits/benefit-details/5893
+    selector: '[id="main"]'
+
+  BID-5894:
+    path: /benefits/benefit-details/5894
+    selector: '[id="main"]'
+  BID-5894-ES:
+    path: /es/benefits/benefit-details/5894
+    selector: '[id="main"]'
+
+  BID-5895:
+    path: /benefits/benefit-details/5895
+    selector: '[id="main"]'
+  BID-5895-ES:
+    path: /es/benefits/benefit-details/5895
+    selector: '[id="main"]'
+
+  BID-5896:
+    path: /benefits/benefit-details/5896
+    selector: '[id="main"]'
+  BID-5896-ES:
+    path: /es/benefits/benefit-details/5896
+    selector: '[id="main"]'
+
+  BID-5897:
+    path: /benefits/benefit-details/5897
+    selector: '[id="main"]'
+  BID-5897-ES:
+    path: /es/benefits/benefit-details/5897
+    selector: '[id="main"]'
+
+  BID-5898:
+    path: /benefits/benefit-details/5898
+    selector: '[id="main"]'
+  BID-5898-ES:
+    path: /es/benefits/benefit-details/5898
+    selector: '[id="main"]'
+
+  BID-5899:
+    path: /benefits/benefit-details/5899
+    selector: '[id="main"]'
+  BID-5899-ES:
+    path: /es/benefits/benefit-details/5899
+    selector: '[id="main"]'
+
+  BID-5900:
+    path: /benefits/benefit-details/5900
+    selector: '[id="main"]'
+  BID-5900-ES:
+    path: /es/benefits/benefit-details/5900
+    selector: '[id="main"]'
+
+  BID-5901:
+    path: /benefits/benefit-details/5901
+    selector: '[id="main"]'
+  BID-5901-ES:
+    path: /es/benefits/benefit-details/5901
+    selector: '[id="main"]'
+
+  BID-5902:
+    path: /benefits/benefit-details/5902
+    selector: '[id="main"]'
+  BID-5902-ES:
+    path: /es/benefits/benefit-details/5902
+    selector: '[id="main"]'
+
+  BID-5903:
+    path: /benefits/benefit-details/5903
+    selector: '[id="main"]'
+  BID-5903-ES:
+    path: /es/benefits/benefit-details/5903
+    selector: '[id="main"]'
+
+  BID-5904:
+    path: /benefits/benefit-details/5904
+    selector: '[id="main"]'
+  BID-5904-ES:
+    path: /es/benefits/benefit-details/5904
+    selector: '[id="main"]'
+
+  BID-5905:
+    path: /benefits/benefit-details/5905
+    selector: '[id="main"]'
+  BID-5905-ES:
+    path: /es/benefits/benefit-details/5905
+    selector: '[id="main"]'
+
+  BID-5907:
+    path: /benefits/benefit-details/5907
+    selector: '[id="main"]'
+  BID-5907-ES:
+    path: /es/benefits/benefit-details/5907
+    selector: '[id="main"]'
+
+  BID-5908:
+    path: /benefits/benefit-details/5908
+    selector: '[id="main"]'
+  BID-5908-ES:
+    path: /es/benefits/benefit-details/5908
+    selector: '[id="main"]'
+
+  BID-5909:
+    path: /benefits/benefit-details/5909
+    selector: '[id="main"]'
+  BID-5909-ES:
+    path: /es/benefits/benefit-details/5909
+    selector: '[id="main"]'
+
+  BID-5910:
+    path: /benefits/benefit-details/5910
+    selector: '[id="main"]'
+  BID-5910-ES:
+    path: /es/benefits/benefit-details/5910
+    selector: '[id="main"]'
+
+  BID-5911:
+    path: /benefits/benefit-details/5911
+    selector: '[id="main"]'
+  BID-5911-ES:
+    path: /es/benefits/benefit-details/5911
+    selector: '[id="main"]'
+
+  BID-5912:
+    path: /benefits/benefit-details/5912
+    selector: '[id="main"]'
+  BID-5912-ES:
+    path: /es/benefits/benefit-details/5912
+    selector: '[id="main"]'
+
+  BID-5914:
+    path: /benefits/benefit-details/5914
+    selector: '[id="main"]'
+  BID-5914-ES:
+    path: /es/benefits/benefit-details/5914
+    selector: '[id="main"]'
+
+  BID-5915:
+    path: /benefits/benefit-details/5915
+    selector: '[id="main"]'
+  BID-5915-ES:
+    path: /es/benefits/benefit-details/5915
+    selector: '[id="main"]'
+
+  BID-5916:
+    path: /benefits/benefit-details/5916
+    selector: '[id="main"]'
+  BID-5916-ES:
+    path: /es/benefits/benefit-details/5916
+    selector: '[id="main"]'
+
+  BID-5917:
+    path: /benefits/benefit-details/5917
+    selector: '[id="main"]'
+  BID-5917-ES:
+    path: /es/benefits/benefit-details/5917
+    selector: '[id="main"]'
+
+  BID-5918:
+    path: /benefits/benefit-details/5918
+    selector: '[id="main"]'
+  BID-5918-ES:
+    path: /es/benefits/benefit-details/5918
+    selector: '[id="main"]'
+
+  BID-5919:
+    path: /benefits/benefit-details/5919
+    selector: '[id="main"]'
+  BID-5919-ES:
+    path: /es/benefits/benefit-details/5919
+    selector: '[id="main"]'
+
+  BID-5920:
+    path: /benefits/benefit-details/5920
+    selector: '[id="main"]'
+  BID-5920-ES:
+    path: /es/benefits/benefit-details/5920
+    selector: '[id="main"]'
+
+  BID-5921:
+    path: /benefits/benefit-details/5921
+    selector: '[id="main"]'
+  BID-5921-ES:
+    path: /es/benefits/benefit-details/5921
+    selector: '[id="main"]'
+
+  BID-5922:
+    path: /benefits/benefit-details/5922
+    selector: '[id="main"]'
+  BID-5922-ES:
+    path: /es/benefits/benefit-details/5922
+    selector: '[id="main"]'
+
+  BID-5923:
+    path: /benefits/benefit-details/5923
+    selector: '[id="main"]'
+  BID-5923-ES:
+    path: /es/benefits/benefit-details/5923
+    selector: '[id="main"]'
+
+  BID-5924:
+    path: /benefits/benefit-details/5924
+    selector: '[id="main"]'
+  BID-5924-ES:
+    path: /es/benefits/benefit-details/5924
+    selector: '[id="main"]'
+
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+phantomjs_options: --ignore-ssl-errors=yes
+
+################################################################
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  #- 450x650
+  - 1280
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'shots/capture/BG/bids/part9'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  #template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first
+  
+
+
+
