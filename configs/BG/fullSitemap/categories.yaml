@@ -1,0 +1,340 @@
+##############################################################
+##############################################################
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# run with "wraith capture configs/BG/fullSitemp/categories.yaml"
+#
+##############################################################
+##############################################################
+
+# (required) The domains to take screenshots of.
+domains:
+  prod: "https://www.benefits.gov"
+  staging: "https://staging.benefits.gov"
+
+# (required) The paths to capture. All paths should exist for both of the domains specified above.
+
+paths:
+
+# Browse by Category page
+# 38 Categories
+
+  browse-by-category:
+    path: /benefits/browse-by-category/category
+    selector: '[id="main"]'
+  browse-by-category-ES:
+    path: /es/benefits/browse-by-category/category
+    selector: '[id="main"]'
+  
+  Category-2:
+    path: /benefits/browse-by-category/category/2
+    selector: '[id="main"]'
+  Category-2-ES:
+    path: /es/benefits/browse-by-category/category/2
+    selector: '[id="main"]'
+
+  Category-61:
+    path: /benefits/browse-by-category/category/61
+    selector: '[id="main"]'
+  Category-61-ES:
+    path: /es/benefits/browse-by-category/category/61
+    selector: '[id="main"]'
+
+  Category-62:
+    path: /benefits/browse-by-category/category/62
+    selector: '[id="main"]'
+  Category-62-ES:
+    path: /es/benefits/browse-by-category/category/62
+    selector: '[id="main"]'
+
+  Category-3:
+    path: /benefits/browse-by-category/category/3
+    selector: '[id="main"]'
+  Category-3-ES:
+    path: /es/benefits/browse-by-category/category/3
+    selector: '[id="main"]'
+
+  Category-11:
+    path: /benefits/browse-by-category/category/11
+    selector: '[id="main"]'
+  Category-11-ES:
+    path: /es/benefits/browse-by-category/category/11
+    selector: '[id="main"]'
+
+  Category-12:
+    path: /benefits/browse-by-category/category/12
+    selector: '[id="main"]'
+  Category-12-ES:
+    path: /es/benefits/browse-by-category/category/12
+    selector: '[id="main"]'
+
+  Category-65:
+    path: /benefits/browse-by-category/category/65
+    selector: '[id="main"]'
+  Category-65-ES:
+    path: /es/benefits/browse-by-category/category/65
+    selector: '[id="main"]'
+
+  Category-13:
+    path: /benefits/browse-by-category/category/13
+    selector: '[id="main"]'
+  Category-13-ES:
+    path: /es/benefits/browse-by-category/category/13
+    selector: '[id="main"]'
+
+  Category-14:
+    path: /benefits/browse-by-category/category/14
+    selector: '[id="main"]'
+  Category-14-ES:
+    path: /es/benefits/browse-by-category/category/14
+    selector: '[id="main"]'
+
+  Category-4:
+    path: /benefits/browse-by-category/category/4
+    selector: '[id="main"]'
+  Category-4-ES:
+    path: /es/benefits/browse-by-category/category/4
+    selector: '[id="main"]'
+
+  Category-5:
+    path: /benefits/browse-by-category/category/5
+    selector: '[id="main"]'
+  Category-5-ES:
+    path: /es/benefits/browse-by-category/category/5
+    selector: '[id="main"]'
+
+  Category-9:
+    path: /benefits/browse-by-category/category/9
+    selector: '[id="main"]'
+  Category-9-ES:
+    path: /es/benefits/browse-by-category/category/9
+    selector: '[id="main"]'
+
+  Category-26:
+    path: /benefits/browse-by-category/category/26
+    selector: '[id="main"]'
+  Category-26-ES:
+    path: /es/benefits/browse-by-category/category/26
+    selector: '[id="main"]'
+
+  Category-27:
+    path: /benefits/browse-by-category/category/27
+    selector: '[id="main"]'
+  Category-27-ES:
+    path: /es/benefits/browse-by-category/category/27
+    selector: '[id="main"]'
+
+  Category-50:
+    path: /benefits/browse-by-category/category/50
+    selector: '[id="main"]'
+  Category-50-ES:
+    path: /es/benefits/browse-by-category/category/50
+    selector: '[id="main"]'
+
+  Category-55:
+    path: /benefits/browse-by-category/category/55
+    selector: '[id="main"]'
+  Category-55-ES:
+    path: /es/benefits/browse-by-category/category/55
+    selector: '[id="main"]'
+
+  Category-70:
+    path: /benefits/browse-by-category/category/70
+    selector: '[id="main"]'
+  Category-70-ES:
+    path: /es/benefits/browse-by-category/category/70
+    selector: '[id="main"]'
+
+  Category-16:
+    path: /benefits/browse-by-category/category/16
+    selector: '[id="main"]'
+  Category-16-ES:
+    path: /es/benefits/browse-by-category/category/16
+    selector: '[id="main"]'
+
+  Category-1:
+    path: /benefits/browse-by-category/category/1
+    selector: '[id="main"]'
+  Category-1-ES:
+    path: /es/benefits/browse-by-category/category/1
+    selector: '[id="main"]'
+
+  Category-17:
+    path: /benefits/browse-by-category/category/17
+    selector: '[id="main"]'
+  Category-17-ES:
+    path: /es/benefits/browse-by-category/category/17
+    selector: '[id="main"]'
+
+  Category-18:
+    path: /benefits/browse-by-category/category/18
+    selector: '[id="main"]'
+  Category-18-ES:
+    path: /es/benefits/browse-by-category/category/18
+    selector: '[id="main"]'
+
+  Category-52:
+    path: /benefits/browse-by-category/category/52
+    selector: '[id="main"]'
+  Category-52-ES:
+    path: /es/benefits/browse-by-category/category/52
+    selector: '[id="main"]'
+
+  Category-19:
+    path: /benefits/browse-by-category/category/19
+    selector: '[id="main"]'
+  Category-19-ES:
+    path: /es/benefits/browse-by-category/category/19
+    selector: '[id="main"]'
+
+  Category-6:
+    path: /benefits/browse-by-category/category/6
+    selector: '[id="main"]'
+  Category-6-ES:
+    path: /es/benefits/browse-by-category/category/6
+    selector: '[id="main"]'
+
+  Category-20:
+    path: /benefits/browse-by-category/category/20
+    selector: '[id="main"]'
+  Category-20-ES:
+    path: /es/benefits/browse-by-category/category/20
+    selector: '[id="main"]'
+
+  Category-28:
+    path: /benefits/browse-by-category/category/28
+    selector: '[id="main"]'
+  Category-28-ES:
+    path: /es/benefits/browse-by-category/category/28
+    selector: '[id="main"]'
+
+  Category-21:
+    path: /benefits/browse-by-category/category/21
+    selector: '[id="main"]'
+  Category-21-ES:
+    path: /es/benefits/browse-by-category/category/21
+    selector: '[id="main"]'
+
+  Category-30:
+    path: /benefits/browse-by-category/category/30
+    selector: '[id="main"]'
+  Category-30-ES:
+    path: /es/benefits/browse-by-category/category/30
+    selector: '[id="main"]'
+
+  Category-54:
+    path: /benefits/browse-by-category/category/54
+    selector: '[id="main"]'
+  Category-54-ES:
+    path: /es/benefits/browse-by-category/category/54
+    selector: '[id="main"]'
+
+  Category-53:
+    path: /benefits/browse-by-category/category/53
+    selector: '[id="main"]'
+  Category-53-ES:
+    path: /es/benefits/browse-by-category/category/53
+    selector: '[id="main"]'
+
+  Category-56:
+    path: /benefits/browse-by-category/category/56
+    selector: '[id="main"]'
+  Category-56-ES:
+    path: /es/benefits/browse-by-category/category/56
+    selector: '[id="main"]'
+
+  Category-59:
+    path: /benefits/browse-by-category/category/59
+    selector: '[id="main"]'
+  Category-59-ES:
+    path: /es/benefits/browse-by-category/category/59
+    selector: '[id="main"]'
+
+  Category-58:
+    path: /benefits/browse-by-category/category/58
+    selector: '[id="main"]'
+  Category-58-ES:
+    path: /es/benefits/browse-by-category/category/58
+    selector: '[id="main"]'
+
+  Category-57:
+    path: /benefits/browse-by-category/category/57
+    selector: '[id="main"]'
+  Category-57-ES:
+    path: /es/benefits/browse-by-category/category/57
+    selector: '[id="main"]'
+
+  Category-29:
+    path: /benefits/browse-by-category/category/29
+    selector: '[id="main"]'
+  Category-29-ES:
+    path: /es/benefits/browse-by-category/category/29
+    selector: '[id="main"]'
+
+  Category-7:
+    path: /benefits/browse-by-category/category/7
+    selector: '[id="main"]'
+  Category-7-ES:
+    path: /es/benefits/browse-by-category/category/7
+    selector: '[id="main"]'
+
+  Category-60:
+    path: /benefits/browse-by-category/category/60
+    selector: '[id="main"]'
+  Category-60-ES:
+    path: /es/benefits/browse-by-category/category/60
+    selector: '[id="main"]'
+
+  Category-24:
+    path: /benefits/browse-by-category/category/24
+    selector: '[id="main"]'
+  Category-24-ES:
+    path: /es/benefits/browse-by-category/category/24
+    selector: '[id="main"]'
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+phantomjs_options: --ignore-ssl-errors=yes
+
+################################################################
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  #- 450x650
+  - 1280
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'shots/capture/BG/fullSitemp/categories'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  #template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first
+  
+
+
+

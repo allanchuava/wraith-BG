@@ -1,0 +1,722 @@
+##############################################################
+##############################################################
+# This is an example configuration provided by Wraith.
+# Feel free to amend for your own requirements.
+# ---
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# run with 'wraith capture configs/SSA/fullSitemap/BIDs-SSA.yaml'
+#
+##############################################################
+##############################################################
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+phantomjs_options: --ignore-ssl-errors=yes
+
+# (required) The domains to take screenshots of.
+domains:
+  prod: "https://ssabest.benefits.gov"
+  staging: "https://staging.ssabest.benefits.gov"
+
+# (required) The paths to capture. All paths should exist for both of the domains specified above.
+
+paths:
+
+  #SSABest BIDs 
+  #94 total
+  
+  BID-2787:
+    path: /benefits/benefit-details/2787
+    selector: ".js"
+  BID-2787-ES:
+    path: /es/benefits/benefit-details/2787
+    selector: ".js"
+
+  BID-2789:
+    path: /benefits/benefit-details/2789
+    selector: ".js"
+  BID-2789-ES:
+    path: /es/benefits/benefit-details/2789
+    selector: ".js"
+
+  BID-2791:
+    path: /benefits/benefit-details/2791
+    selector: ".js"
+  BID-2791-ES:
+    path: /es/benefits/benefit-details/2791
+    selector: ".js"
+
+  BID-2793:
+    path: /benefits/benefit-details/2793
+    selector: ".js"
+  BID-2793-ES:
+    path: /es/benefits/benefit-details/2793
+    selector: ".js"
+
+  BID-2795:
+    path: /benefits/benefit-details/2795
+    selector: ".js"
+  BID-2795-ES:
+    path: /es/benefits/benefit-details/2795
+    selector: ".js"
+
+  BID-2797:
+    path: /benefits/benefit-details/2797
+    selector: ".js"
+  BID-2797-ES:
+    path: /es/benefits/benefit-details/2797
+    selector: ".js"
+
+  BID-2802:
+    path: /benefits/benefit-details/2802
+    selector: ".js"
+  BID-2802-ES:
+    path: /es/benefits/benefit-details/2802
+    selector: ".js"
+
+  BID-2804:
+    path: /benefits/benefit-details/2804
+    selector: ".js"
+  BID-2804-ES:
+    path: /es/benefits/benefit-details/2804
+    selector: ".js"
+
+  BID-2808:
+    path: /benefits/benefit-details/2808
+    selector: ".js"
+  BID-2808-ES:
+    path: /es/benefits/benefit-details/2808
+    selector: ".js"
+
+  BID-2813:
+    path: /benefits/benefit-details/2813
+    selector: ".js"
+  BID-2813-ES:
+    path: /es/benefits/benefit-details/2813
+    selector: ".js"
+
+  BID-2820:
+    path: /benefits/benefit-details/2820
+    selector: ".js"
+  BID-2820-ES:
+    path: /es/benefits/benefit-details/2820
+    selector: ".js"
+
+  BID-2821:
+    path: /benefits/benefit-details/2821
+    selector: ".js"
+  BID-2821-ES:
+    path: /es/benefits/benefit-details/2821
+    selector: ".js"
+
+  BID-2823:
+    path: /benefits/benefit-details/2823
+    selector: ".js"
+  BID-2823-ES:
+    path: /es/benefits/benefit-details/2823
+    selector: ".js"
+
+  BID-2827:
+    path: /benefits/benefit-details/2827
+    selector: ".js"
+  BID-2827-ES:
+    path: /es/benefits/benefit-details/2827
+    selector: ".js"
+
+  BID-2829:
+    path: /benefits/benefit-details/2829
+    selector: ".js"
+  BID-2829-ES:
+    path: /es/benefits/benefit-details/2829
+    selector: ".js"
+
+  BID-2836:
+    path: /benefits/benefit-details/2836
+    selector: ".js"
+  BID-2836-ES:
+    path: /es/benefits/benefit-details/2836
+    selector: ".js"
+
+  BID-2842:
+    path: /benefits/benefit-details/2842
+    selector: ".js"
+  BID-2842-ES:
+    path: /es/benefits/benefit-details/2842
+    selector: ".js"
+
+  BID-2844:
+    path: /benefits/benefit-details/2844
+    selector: ".js"
+  BID-2844-ES:
+    path: /es/benefits/benefit-details/2844
+    selector: ".js"
+
+  BID-2846:
+    path: /benefits/benefit-details/2846
+    selector: ".js"
+  BID-2846-ES:
+    path: /es/benefits/benefit-details/2846
+    selector: ".js"
+
+  BID-2848:
+    path: /benefits/benefit-details/2848
+    selector: ".js"
+  BID-2848-ES:
+    path: /es/benefits/benefit-details/2848
+    selector: ".js"
+
+  BID-2851:
+    path: /benefits/benefit-details/2851
+    selector: ".js"
+  BID-2851-ES:
+    path: /es/benefits/benefit-details/2851
+    selector: ".js"
+
+  BID-2857:
+    path: /benefits/benefit-details/2857
+    selector: ".js"
+  BID-2857-ES:
+    path: /es/benefits/benefit-details/2857
+    selector: ".js"
+
+  BID-2859:
+    path: /benefits/benefit-details/2859
+    selector: ".js"
+  BID-2859-ES:
+    path: /es/benefits/benefit-details/2859
+    selector: ".js"
+
+  BID-2864:
+    path: /benefits/benefit-details/2864
+    selector: ".js"
+  BID-2864-ES:
+    path: /es/benefits/benefit-details/2864
+    selector: ".js"
+
+  BID-2867:
+    path: /benefits/benefit-details/2867
+    selector: ".js"
+  BID-2867-ES:
+    path: /es/benefits/benefit-details/2867
+    selector: ".js"
+
+  BID-2869:
+    path: /benefits/benefit-details/2869
+    selector: ".js"
+  BID-2869-ES:
+    path: /es/benefits/benefit-details/2869
+    selector: ".js"
+
+  BID-2871:
+    path: /benefits/benefit-details/2871
+    selector: ".js"
+  BID-2871-ES:
+    path: /es/benefits/benefit-details/2871
+    selector: ".js"
+
+  BID-2876:
+    path: /benefits/benefit-details/2876
+    selector: ".js"
+  BID-2876-ES:
+    path: /es/benefits/benefit-details/2876
+    selector: ".js"
+
+  BID-2878:
+    path: /benefits/benefit-details/2878
+    selector: ".js"
+  BID-2878-ES:
+    path: /es/benefits/benefit-details/2878
+    selector: ".js"
+
+  BID-2883:
+    path: /benefits/benefit-details/2883
+    selector: ".js"
+  BID-2883-ES:
+    path: /es/benefits/benefit-details/2883
+    selector: ".js"
+
+  BID-2890:
+    path: /benefits/benefit-details/2890
+    selector: ".js"
+  BID-2890-ES:
+    path: /es/benefits/benefit-details/2890
+    selector: ".js"
+
+  BID-2896:
+    path: /benefits/benefit-details/2896
+    selector: ".js"
+  BID-2896-ES:
+    path: /es/benefits/benefit-details/2896
+    selector: ".js"
+
+  BID-2898:
+    path: /benefits/benefit-details/2898
+    selector: ".js"
+  BID-2898-ES:
+    path: /es/benefits/benefit-details/2898
+    selector: ".js"
+
+  BID-2900:
+    path: /benefits/benefit-details/2900
+    selector: ".js"
+  BID-2900-ES:
+    path: /es/benefits/benefit-details/2900
+    selector: ".js"
+
+  BID-2906:
+    path: /benefits/benefit-details/2906
+    selector: ".js"
+  BID-2906-ES:
+    path: /es/benefits/benefit-details/2906
+    selector: ".js"
+
+  BID-2908:
+    path: /benefits/benefit-details/2908
+    selector: ".js"
+  BID-2908-ES:
+    path: /es/benefits/benefit-details/2908
+    selector: ".js"
+
+  BID-2910:
+    path: /benefits/benefit-details/2910
+    selector: ".js"
+  BID-2910-ES:
+    path: /es/benefits/benefit-details/2910
+    selector: ".js"
+
+  BID-2915:
+    path: /benefits/benefit-details/2915
+    selector: ".js"
+  BID-2915-ES:
+    path: /es/benefits/benefit-details/2915
+    selector: ".js"
+
+  BID-2916:
+    path: /benefits/benefit-details/2916
+    selector: ".js"
+  BID-2916-ES:
+    path: /es/benefits/benefit-details/2916
+    selector: ".js"
+
+  BID-2919:
+    path: /benefits/benefit-details/2919
+    selector: ".js"
+  BID-2919-ES:
+    path: /es/benefits/benefit-details/2919
+    selector: ".js"
+
+  BID-2921:
+    path: /benefits/benefit-details/2921
+    selector: ".js"
+  BID-2921-ES:
+    path: /es/benefits/benefit-details/2921
+    selector: ".js"
+
+  BID-2925:
+    path: /benefits/benefit-details/2925
+    selector: ".js"
+  BID-2925-ES:
+    path: /es/benefits/benefit-details/2925
+    selector: ".js"
+
+  BID-2927:
+    path: /benefits/benefit-details/2927
+    selector: ".js"
+  BID-2927-ES:
+    path: /es/benefits/benefit-details/2927
+    selector: ".js"
+
+  BID-2929:
+    path: /benefits/benefit-details/2929
+    selector: ".js"
+  BID-2929-ES:
+    path: /es/benefits/benefit-details/2929
+    selector: ".js"
+
+  BID-2933:
+    path: /benefits/benefit-details/2933
+    selector: ".js"
+  BID-2933-ES:
+    path: /es/benefits/benefit-details/2933
+    selector: ".js"
+
+  BID-2935:
+    path: /benefits/benefit-details/2935
+    selector: ".js"
+  BID-2935-ES:
+    path: /es/benefits/benefit-details/2935
+    selector: ".js"
+
+  BID-2937:
+    path: /benefits/benefit-details/2937
+    selector: ".js"
+  BID-2937-ES:
+    path: /es/benefits/benefit-details/2937
+    selector: ".js"
+
+  BID-2939:
+    path: /benefits/benefit-details/2939
+    selector: ".js"
+  BID-2939-ES:
+    path: /es/benefits/benefit-details/2939
+    selector: ".js"
+
+  BID-2941:
+    path: /benefits/benefit-details/2941
+    selector: ".js"
+  BID-2941-ES:
+    path: /es/benefits/benefit-details/2941
+    selector: ".js"
+
+  BID-2943:
+    path: /benefits/benefit-details/2943
+    selector: ".js"
+  BID-2943-ES:
+    path: /es/benefits/benefit-details/2943
+    selector: ".js"
+
+  BID-2945:
+    path: /benefits/benefit-details/2945
+    selector: ".js"
+  BID-2945-ES:
+    path: /es/benefits/benefit-details/2945
+    selector: ".js"
+
+  BID-2947:
+    path: /benefits/benefit-details/2947
+    selector: ".js"
+  BID-2947-ES:
+    path: /es/benefits/benefit-details/2947
+    selector: ".js"
+
+  BID-2949:
+    path: /benefits/benefit-details/2949
+    selector: ".js"
+  BID-2949-ES:
+    path: /es/benefits/benefit-details/2949
+    selector: ".js"
+
+  BID-2951:
+    path: /benefits/benefit-details/2951
+    selector: ".js"
+  BID-2951-ES:
+    path: /es/benefits/benefit-details/2951
+    selector: ".js"
+
+  BID-2953:
+    path: /benefits/benefit-details/2953
+    selector: ".js"
+  BID-2953-ES:
+    path: /es/benefits/benefit-details/2953
+    selector: ".js"
+
+  BID-2955:
+    path: /benefits/benefit-details/2955
+    selector: ".js"
+  BID-2955-ES:
+    path: /es/benefits/benefit-details/2955
+    selector: ".js"
+
+  BID-2957:
+    path: /benefits/benefit-details/2957
+    selector: ".js"
+  BID-2957-ES:
+    path: /es/benefits/benefit-details/2957
+    selector: ".js"
+
+  BID-2959:
+    path: /benefits/benefit-details/2959
+    selector: ".js"
+  BID-2959-ES:
+    path: /es/benefits/benefit-details/2959
+    selector: ".js"
+
+  BID-4343:
+    path: /benefits/benefit-details/4343
+    selector: ".js"
+  BID-4343-ES:
+    path: /es/benefits/benefit-details/4343
+    selector: ".js"
+
+  BID-4345:
+    path: /benefits/benefit-details/4345
+    selector: ".js"
+  BID-4345-ES:
+    path: /es/benefits/benefit-details/4345
+    selector: ".js"
+
+  BID-4347:
+    path: /benefits/benefit-details/4347
+    selector: ".js"
+  BID-4347-ES:
+    path: /es/benefits/benefit-details/4347
+    selector: ".js"
+
+  BID-4349:
+    path: /benefits/benefit-details/4349
+    selector: ".js"
+  BID-4349-ES:
+    path: /es/benefits/benefit-details/4349
+    selector: ".js"
+
+  BID-4351:
+    path: /benefits/benefit-details/4351
+    selector: ".js"
+  BID-4351-ES:
+    path: /es/benefits/benefit-details/4351
+    selector: ".js"
+
+  BID-4353:
+    path: /benefits/benefit-details/4353
+    selector: ".js"
+  BID-4353-ES:
+    path: /es/benefits/benefit-details/4353
+    selector: ".js"
+
+  BID-4355:
+    path: /benefits/benefit-details/4355
+    selector: ".js"
+  BID-4355-ES:
+    path: /es/benefits/benefit-details/4355
+    selector: ".js"
+
+  BID-4358:
+    path: /benefits/benefit-details/4358
+    selector: ".js"
+  BID-4358-ES:
+    path: /es/benefits/benefit-details/4358
+    selector: ".js"
+
+  BID-4360:
+    path: /benefits/benefit-details/4360
+    selector: ".js"
+  BID-4360-ES:
+    path: /es/benefits/benefit-details/4360
+    selector: ".js"
+
+  BID-4362:
+    path: /benefits/benefit-details/4362
+    selector: ".js"
+  BID-4362-ES:
+    path: /es/benefits/benefit-details/4362
+    selector: ".js"
+
+  BID-4380:
+    path: /benefits/benefit-details/4380
+    selector: ".js"
+  BID-4380-ES:
+    path: /es/benefits/benefit-details/4380
+    selector: ".js"
+
+  BID-4382:
+    path: /benefits/benefit-details/4382
+    selector: ".js"
+  BID-4382-ES:
+    path: /es/benefits/benefit-details/4382
+    selector: ".js"
+
+  BID-4384:
+    path: /benefits/benefit-details/4384
+    selector: ".js"
+  BID-4384-ES:
+    path: /es/benefits/benefit-details/4384
+    selector: ".js"
+
+  BID-4386:
+    path: /benefits/benefit-details/4386
+    selector: ".js"
+  BID-4386-ES:
+    path: /es/benefits/benefit-details/4386
+    selector: ".js"
+
+  BID-4388:
+    path: /benefits/benefit-details/4388
+    selector: ".js"
+  BID-4388-ES:
+    path: /es/benefits/benefit-details/4388
+    selector: ".js"
+
+  BID-4390:
+    path: /benefits/benefit-details/4390
+    selector: ".js"
+  BID-4390-ES:
+    path: /es/benefits/benefit-details/4390
+    selector: ".js"
+
+  BID-4392:
+    path: /benefits/benefit-details/4392
+    selector: ".js"
+  BID-4392-ES:
+    path: /es/benefits/benefit-details/4392
+    selector: ".js"
+
+  BID-4394:
+    path: /benefits/benefit-details/4394
+    selector: ".js"
+  BID-4394-ES:
+    path: /es/benefits/benefit-details/4394
+    selector: ".js"
+
+  BID-4396:
+    path: /benefits/benefit-details/4396
+    selector: ".js"
+  BID-4396-ES:
+    path: /es/benefits/benefit-details/4396
+    selector: ".js"
+
+  BID-4398:
+    path: /benefits/benefit-details/4398
+    selector: ".js"
+  BID-4398-ES:
+    path: /es/benefits/benefit-details/4398
+    selector: ".js"
+
+  BID-4400:
+    path: /benefits/benefit-details/4400
+    selector: ".js"
+  BID-4400-ES:
+    path: /es/benefits/benefit-details/4400
+    selector: ".js"
+
+  BID-4402:
+    path: /benefits/benefit-details/4402
+    selector: ".js"
+  BID-4402-ES:
+    path: /es/benefits/benefit-details/4402
+    selector: ".js"
+
+  BID-4404:
+    path: /benefits/benefit-details/4404
+    selector: ".js"
+  BID-4404-ES:
+    path: /es/benefits/benefit-details/4404
+    selector: ".js"
+
+  BID-4406:
+    path: /benefits/benefit-details/4406
+    selector: ".js"
+  BID-4406-ES:
+    path: /es/benefits/benefit-details/4406
+    selector: ".js"
+
+  BID-4408:
+    path: /benefits/benefit-details/4408
+    selector: ".js"
+  BID-4408-ES:
+    path: /es/benefits/benefit-details/4408
+    selector: ".js"
+
+  BID-4410:
+    path: /benefits/benefit-details/4410
+    selector: ".js"
+  BID-4410-ES:
+    path: /es/benefits/benefit-details/4410
+    selector: ".js"
+
+  BID-4412:
+    path: /benefits/benefit-details/4412
+    selector: ".js"
+  BID-4412-ES:
+    path: /es/benefits/benefit-details/4412
+    selector: ".js"
+
+  BID-548:
+    path: /benefits/benefit-details/548
+    selector: ".js"
+  BID-548-ES:
+    path: /es/benefits/benefit-details/548
+    selector: ".js"
+
+  BID-550:
+    path: /benefits/benefit-details/550
+    selector: ".js"
+  BID-550-ES:
+    path: /es/benefits/benefit-details/550
+    selector: ".js"
+
+  BID-553:
+    path: /benefits/benefit-details/553
+    selector: ".js"
+  BID-553-ES:
+    path: /es/benefits/benefit-details/553
+    selector: ".js"
+
+  BID-574:
+    path: /benefits/benefit-details/574
+    selector: ".js"
+  BID-574-ES:
+    path: /es/benefits/benefit-details/574
+    selector: ".js"
+
+  BID-575:
+    path: /benefits/benefit-details/575
+    selector: ".js"
+  BID-575-ES:
+    path: /es/benefits/benefit-details/575
+    selector: ".js"
+
+  BID-576:
+    path: /benefits/benefit-details/576
+    selector: ".js"
+  BID-576-ES:
+    path: /es/benefits/benefit-details/576
+    selector: ".js"
+
+  BID-577:
+    path: /benefits/benefit-details/577
+    selector: ".js"
+  BID-577-ES:
+    path: /es/benefits/benefit-details/577
+    selector: ".js"
+
+  BID-578:
+    path: /benefits/benefit-details/578
+    selector: ".js"
+  BID-578-ES:
+    path: /es/benefits/benefit-details/578
+    selector: ".js"
+
+  BID-579:
+    path: /benefits/benefit-details/579
+    selector: ".js"
+  BID-579-ES:
+    path: /es/benefits/benefit-details/579
+    selector: ".js"
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  #- 450x650
+  - 1280
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'shots/capture/SSA/fullSitemap/BIDs'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  #template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first

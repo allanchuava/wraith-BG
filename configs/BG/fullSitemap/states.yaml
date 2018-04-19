@@ -1,0 +1,439 @@
+##############################################################
+##############################################################
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# run with "wraith capture configs/BG/fullSitemap/states.yaml"
+#
+##############################################################
+##############################################################
+
+# (required) The domains to take screenshots of.
+domains:
+  prod: "https://www.benefits.gov"
+  staging: "https://staging.benefits.gov"
+
+# (required) The paths to capture. All paths should exist for both of the domains specified above.
+
+paths:
+
+# Browse by State page
+# 52 States (DC and Puerto Rico)
+
+  browse-by-state:
+    path: /benefits/browse-by-state
+    selector: '[id="main"]'
+  browse-by-category-ES:
+    path: /es/benefits/browse-by-state
+    selector: '[id="main"]'
+  
+  State-142:
+    path: /benefits/browse-by-state/state/142
+    selector: '[id="main"]'
+  State-142-ES:
+    path: /es/benefits/browse-by-state/state/142
+    selector: '[id="main"]'
+
+  State-143:
+    path: /benefits/browse-by-state/state/143
+    selector: '[id="main"]'
+  State-143-ES:
+    path: /es/benefits/browse-by-state/state/143
+    selector: '[id="main"]'
+
+  State-144:
+    path: /benefits/browse-by-state/state/144
+    selector: '[id="main"]'
+  State-144-ES:
+    path: /es/benefits/browse-by-state/state/144
+    selector: '[id="main"]'
+
+  State-145:
+    path: /benefits/browse-by-state/state/145
+    selector: '[id="main"]'
+  State-145-ES:
+    path: /es/benefits/browse-by-state/state/145
+    selector: '[id="main"]'
+
+  State-146:
+    path: /benefits/browse-by-state/state/146
+    selector: '[id="main"]'
+  State-146-ES:
+    path: /es/benefits/browse-by-state/state/146
+    selector: '[id="main"]'
+
+  State-147:
+    path: /benefits/browse-by-state/state/147
+    selector: '[id="main"]'
+  State-147-ES:
+    path: /es/benefits/browse-by-state/state/147
+    selector: '[id="main"]'
+
+  State-148:
+    path: /benefits/browse-by-state/state/148
+    selector: '[id="main"]'
+  State-148-ES:
+    path: /es/benefits/browse-by-state/state/148
+    selector: '[id="main"]'
+
+  State-149:
+    path: /benefits/browse-by-state/state/149
+    selector: '[id="main"]'
+  State-149-ES:
+    path: /es/benefits/browse-by-state/state/149
+    selector: '[id="main"]'
+
+  State-150:
+    path: /benefits/browse-by-state/state/150
+    selector: '[id="main"]'
+  State-150-ES:
+    path: /es/benefits/browse-by-state/state/150
+    selector: '[id="main"]'
+
+  State-151:
+    path: /benefits/browse-by-state/state/151
+    selector: '[id="main"]'
+  State-151-ES:
+    path: /es/benefits/browse-by-state/state/151
+    selector: '[id="main"]'
+
+  State-152:
+    path: /benefits/browse-by-state/state/152
+    selector: '[id="main"]'
+  State-152-ES:
+    path: /es/benefits/browse-by-state/state/152
+    selector: '[id="main"]'
+
+  State-153:
+    path: /benefits/browse-by-state/state/153
+    selector: '[id="main"]'
+  State-153-ES:
+    path: /es/benefits/browse-by-state/state/153
+    selector: '[id="main"]'
+
+  State-154:
+    path: /benefits/browse-by-state/state/154
+    selector: '[id="main"]'
+  State-154-ES:
+    path: /es/benefits/browse-by-state/state/154
+    selector: '[id="main"]'
+
+  State-155:
+    path: /benefits/browse-by-state/state/155
+    selector: '[id="main"]'
+  State-155-ES:
+    path: /es/benefits/browse-by-state/state/155
+    selector: '[id="main"]'
+
+  State-156:
+    path: /benefits/browse-by-state/state/156
+    selector: '[id="main"]'
+  State-156-ES:
+    path: /es/benefits/browse-by-state/state/156
+    selector: '[id="main"]'
+
+  State-157:
+    path: /benefits/browse-by-state/state/157
+    selector: '[id="main"]'
+  State-157-ES:
+    path: /es/benefits/browse-by-state/state/157
+    selector: '[id="main"]'
+
+  State-158:
+    path: /benefits/browse-by-state/state/158
+    selector: '[id="main"]'
+  State-158-ES:
+    path: /es/benefits/browse-by-state/state/158
+    selector: '[id="main"]'
+
+  State-159:
+    path: /benefits/browse-by-state/state/159
+    selector: '[id="main"]'
+  State-159-ES:
+    path: /es/benefits/browse-by-state/state/159
+    selector: '[id="main"]'
+
+  State-160:
+    path: /benefits/browse-by-state/state/160
+    selector: '[id="main"]'
+  State-160-ES:
+    path: /es/benefits/browse-by-state/state/160
+    selector: '[id="main"]'
+
+  State-161:
+    path: /benefits/browse-by-state/state/161
+    selector: '[id="main"]'
+  State-161-ES:
+    path: /es/benefits/browse-by-state/state/161
+    selector: '[id="main"]'
+
+  State-162:
+    path: /benefits/browse-by-state/state/162
+    selector: '[id="main"]'
+  State-162-ES:
+    path: /es/benefits/browse-by-state/state/162
+    selector: '[id="main"]'
+
+  State-163:
+    path: /benefits/browse-by-state/state/163
+    selector: '[id="main"]'
+  State-163-ES:
+    path: /es/benefits/browse-by-state/state/163
+    selector: '[id="main"]'
+
+  State-164:
+    path: /benefits/browse-by-state/state/164
+    selector: '[id="main"]'
+  State-164-ES:
+    path: /es/benefits/browse-by-state/state/164
+    selector: '[id="main"]'
+
+  State-165:
+    path: /benefits/browse-by-state/state/165
+    selector: '[id="main"]'
+  State-165-ES:
+    path: /es/benefits/browse-by-state/state/165
+    selector: '[id="main"]'
+
+  State-166:
+    path: /benefits/browse-by-state/state/166
+    selector: '[id="main"]'
+  State-166-ES:
+    path: /es/benefits/browse-by-state/state/166
+    selector: '[id="main"]'
+
+  State-167:
+    path: /benefits/browse-by-state/state/167
+    selector: '[id="main"]'
+  State-167-ES:
+    path: /es/benefits/browse-by-state/state/167
+    selector: '[id="main"]'
+
+  State-168:
+    path: /benefits/browse-by-state/state/168
+    selector: '[id="main"]'
+  State-168-ES:
+    path: /es/benefits/browse-by-state/state/168
+    selector: '[id="main"]'
+
+  State-169:
+    path: /benefits/browse-by-state/state/169
+    selector: '[id="main"]'
+  State-169-ES:
+    path: /es/benefits/browse-by-state/state/169
+    selector: '[id="main"]'
+
+  State-170:
+    path: /benefits/browse-by-state/state/170
+    selector: '[id="main"]'
+  State-170-ES:
+    path: /es/benefits/browse-by-state/state/170
+    selector: '[id="main"]'
+
+  State-171:
+    path: /benefits/browse-by-state/state/171
+    selector: '[id="main"]'
+  State-171-ES:
+    path: /es/benefits/browse-by-state/state/171
+    selector: '[id="main"]'
+
+  State-172:
+    path: /benefits/browse-by-state/state/172
+    selector: '[id="main"]'
+  State-172-ES:
+    path: /es/benefits/browse-by-state/state/172
+    selector: '[id="main"]'
+
+  State-173:
+    path: /benefits/browse-by-state/state/173
+    selector: '[id="main"]'
+  State-173-ES:
+    path: /es/benefits/browse-by-state/state/173
+    selector: '[id="main"]'
+
+  State-174:
+    path: /benefits/browse-by-state/state/174
+    selector: '[id="main"]'
+  State-174-ES:
+    path: /es/benefits/browse-by-state/state/174
+    selector: '[id="main"]'
+
+  State-175:
+    path: /benefits/browse-by-state/state/175
+    selector: '[id="main"]'
+  State-175-ES:
+    path: /es/benefits/browse-by-state/state/175
+    selector: '[id="main"]'
+
+  State-176:
+    path: /benefits/browse-by-state/state/176
+    selector: '[id="main"]'
+  State-176-ES:
+    path: /es/benefits/browse-by-state/state/176
+    selector: '[id="main"]'
+
+  State-177:
+    path: /benefits/browse-by-state/state/177
+    selector: '[id="main"]'
+  State-177-ES:
+    path: /es/benefits/browse-by-state/state/177
+    selector: '[id="main"]'
+
+  State-178:
+    path: /benefits/browse-by-state/state/178
+    selector: '[id="main"]'
+  State-178-ES:
+    path: /es/benefits/browse-by-state/state/178
+    selector: '[id="main"]'
+
+  State-179:
+    path: /benefits/browse-by-state/state/179
+    selector: '[id="main"]'
+  State-179-ES:
+    path: /es/benefits/browse-by-state/state/179
+    selector: '[id="main"]'
+
+  State-180:
+    path: /benefits/browse-by-state/state/180
+    selector: '[id="main"]'
+  State-180-ES:
+    path: /es/benefits/browse-by-state/state/180
+    selector: '[id="main"]'
+
+  State-181:
+    path: /benefits/browse-by-state/state/181
+    selector: '[id="main"]'
+  State-181-ES:
+    path: /es/benefits/browse-by-state/state/181
+    selector: '[id="main"]'
+
+  State-182:
+    path: /benefits/browse-by-state/state/182
+    selector: '[id="main"]'
+  State-182-ES:
+    path: /es/benefits/browse-by-state/state/182
+    selector: '[id="main"]'
+
+  State-183:
+    path: /benefits/browse-by-state/state/183
+    selector: '[id="main"]'
+  State-183-ES:
+    path: /es/benefits/browse-by-state/state/183
+    selector: '[id="main"]'
+
+  State-184:
+    path: /benefits/browse-by-state/state/184
+    selector: '[id="main"]'
+  State-184-ES:
+    path: /es/benefits/browse-by-state/state/184
+    selector: '[id="main"]'
+
+  State-185:
+    path: /benefits/browse-by-state/state/185
+    selector: '[id="main"]'
+  State-185-ES:
+    path: /es/benefits/browse-by-state/state/185
+    selector: '[id="main"]'
+
+  State-186:
+    path: /benefits/browse-by-state/state/186
+    selector: '[id="main"]'
+  State-186-ES:
+    path: /es/benefits/browse-by-state/state/186
+    selector: '[id="main"]'
+
+  State-187:
+    path: /benefits/browse-by-state/state/187
+    selector: '[id="main"]'
+  State-187-ES:
+    path: /es/benefits/browse-by-state/state/187
+    selector: '[id="main"]'
+
+  State-188:
+    path: /benefits/browse-by-state/state/188
+    selector: '[id="main"]'
+  State-188-ES:
+    path: /es/benefits/browse-by-state/state/188
+    selector: '[id="main"]'
+
+  State-189:
+    path: /benefits/browse-by-state/state/189
+    selector: '[id="main"]'
+  State-189-ES:
+    path: /es/benefits/browse-by-state/state/189
+    selector: '[id="main"]'
+
+  State-190:
+    path: /benefits/browse-by-state/state/190
+    selector: '[id="main"]'
+  State-190-ES:
+    path: /es/benefits/browse-by-state/state/190
+    selector: '[id="main"]'
+
+  State-191:
+    path: /benefits/browse-by-state/state/191
+    selector: '[id="main"]'
+  State-191-ES:
+    path: /es/benefits/browse-by-state/state/191
+    selector: '[id="main"]'
+
+  State-192:
+    path: /benefits/browse-by-state/state/192
+    selector: '[id="main"]'
+  State-192-ES:
+    path: /es/benefits/browse-by-state/state/192
+    selector: '[id="main"]'
+
+  State-208:
+    path: /benefits/browse-by-state/state/208
+    selector: '[id="main"]'
+  State-208-ES:
+    path: /es/benefits/browse-by-state/state/208
+    selector: '[id="main"]'
+
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+phantomjs_options: --ignore-ssl-errors=yes
+
+################################################################
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  #- 450x650
+  - 1280
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'shots/capture/BG/fullSitemap/states'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  #template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first
+  
+
+
+

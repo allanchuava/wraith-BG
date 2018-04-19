@@ -1,0 +1,160 @@
+##############################################################
+##############################################################
+# This is an example configuration provided by Wraith.
+# Feel free to amend for your own requirements.
+# ---
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# run with 'wraith capture configs/GL/fullSitemap/BIDs-GL-EN.yaml'
+#
+##############################################################
+##############################################################
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+phantomjs_options: --ignore-ssl-errors=yes
+
+# (required) The domains to take screenshots of.
+domains:
+  prod: "https://www.govloans.gov"
+  staging: "https://staging.govloans.gov"
+
+# (required) The paths to capture. All paths should exist for both of the domains specified above.
+paths:
+
+  #GovLoans Links
+
+  BID-1497:
+    path: /loans/loan-details/1497
+  BID-1498:
+    path: /loans/loan-details/1498
+  BID-1499:
+    path: /loans/loan-details/1499
+  BID-1501:
+    path: /loans/loan-details/1501
+  BID-1502:
+    path: /loans/loan-details/1502
+  BID-1503:
+    path: /loans/loan-details/1503
+  BID-1504:
+    path: /loans/loan-details/1504
+  BID-1505:
+    path: /loans/loan-details/1505
+  BID-1506:
+    path: /loans/loan-details/1506
+  BID-1507:
+    path: /loans/loan-details/1507
+  BID-1512:
+    path: /loans/loan-details/1512
+  BID-2201:
+    path: /loans/loan-details/2201
+  BID-2687:
+    path: /loans/loan-details/2687
+  BID-2689:
+    path: /loans/loan-details/2689
+  BID-2706:
+    path: /loans/loan-details/2706
+  BID-292:
+    path: /loans/loan-details/292
+  BID-347:
+    path: /loans/loan-details/347
+  BID-348:
+    path: /loans/loan-details/348
+  BID-349:
+    path: /loans/loan-details/349
+  BID-392:
+    path: /loans/loan-details/392
+  BID-401:
+    path: /loans/loan-details/401
+  BID-402:
+    path: /loans/loan-details/402
+  BID-418:
+    path: /loans/loan-details/418
+  BID-4364:
+    path: /loans/loan-details/4364
+  BID-4366:
+    path: /loans/loan-details/4366
+  BID-4372:
+    path: /loans/loan-details/4372
+  BID-4426:
+    path: /loans/loan-details/4426
+  BID-4432:
+    path: /loans/loan-details/4432
+  BID-4434:
+    path: /loans/loan-details/4434
+  BID-447:
+    path: /loans/loan-details/447
+  BID-449:
+    path: /loans/loan-details/449
+  BID-467:
+    path: /loans/loan-details/467
+  BID-469:
+    path: /loans/loan-details/469
+  BID-4735:
+    path: /loans/loan-details/4735
+  BID-476:
+    path: /loans/loan-details/476
+  BID-480:
+    path: /loans/loan-details/480
+  BID-501:
+    path: /loans/loan-details/501
+  BID-502:
+    path: /loans/loan-details/502
+  BID-504:
+    path: /loans/loan-details/504
+  BID-5876:
+    path: /loans/loan-details/5876
+  BID-5877:
+    path: /loans/loan-details/5877
+  BID-5933:
+    path: /loans/loan-details/5933
+  BID-602:
+    path: /loans/loan-details/602
+  BID-688:
+    path: /loans/loan-details/688
+  BID-694:
+    path: /loans/loan-details/694
+  BID-770:
+    path: /loans/loan-details/770
+  BID-800:
+    path: /loans/loan-details/800
+  BID-847:
+    path: /loans/loan-details/847
+
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  #- 450x650
+  - 1280
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'shots/capture/GL_EN/fullSitemap/BIDs'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  #template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first

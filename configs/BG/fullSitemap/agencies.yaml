@@ -1,0 +1,257 @@
+##############################################################
+##############################################################
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# run with "wraith capture configs/BG/fullSitemap/agencies.yaml"
+#
+##############################################################
+##############################################################
+
+# (required) The domains to take screenshots of.
+domains:
+  prod: "https://www.benefits.gov"
+  staging: "https://staging.benefits.gov"
+
+# (required) The paths to capture. All paths should exist for both of the domains specified above.
+
+paths:
+
+# Browse by Agency page
+# 26 Agencies 
+
+  browse-by-agency:
+    path: /benefits/browse-by-agency/agency
+    selector: '[id="main"]'
+  browse-by-agency-ES:
+    path: /es/benefits/browse-by-agency/agency
+    selector: '[id="main"]'
+  
+  Agency-71:
+    path: /benefits/browse-by-agency/agency/71
+    selector: '[id="main"]'
+  Agency-71-ES:
+    path: /es/benefits/browse-by-agency/agency/71
+    selector: '[id="main"]'
+
+  Agency-63:
+    path: /benefits/browse-by-agency/agency/63
+    selector: '[id="main"]'
+  Agency-63-ES:
+    path: /es/benefits/browse-by-agency/agency/63
+    selector: '[id="main"]'
+
+  Agency-65:
+    path: /benefits/browse-by-agency/agency/65
+    selector: '[id="main"]'
+  Agency-65-ES:
+    path: /es/benefits/browse-by-agency/agency/65
+    selector: '[id="main"]'
+
+  Agency-909:
+    path: /benefits/browse-by-agency/agency/909
+    selector: '[id="main"]'
+  Agency-909-ES:
+    path: /es/benefits/browse-by-agency/agency/909
+    selector: '[id="main"]'
+
+  Agency-69:
+    path: /benefits/browse-by-agency/agency/69
+    selector: '[id="main"]'
+  Agency-69-ES:
+    path: /es/benefits/browse-by-agency/agency/69
+    selector: '[id="main"]'
+
+  Agency-73:
+    path: /benefits/browse-by-agency/agency/73
+    selector: '[id="main"]'
+  Agency-73-ES:
+    path: /es/benefits/browse-by-agency/agency/73
+    selector: '[id="main"]'
+
+  Agency-77:
+    path: /benefits/browse-by-agency/agency/77
+    selector: '[id="main"]'
+  Agency-77-ES:
+    path: /es/benefits/browse-by-agency/agency/77
+    selector: '[id="main"]'
+
+  Agency-78:
+    path: /benefits/browse-by-agency/agency/78
+    selector: '[id="main"]'
+  Agency-78-ES:
+    path: /es/benefits/browse-by-agency/agency/78
+    selector: '[id="main"]'
+
+  Agency-2:
+    path: /benefits/browse-by-agency/agency/2
+    selector: '[id="main"]'
+  Agency-2-ES:
+    path: /es/benefits/browse-by-agency/agency/2
+    selector: '[id="main"]'
+
+  Agency-70:
+    path: /benefits/browse-by-agency/agency/70
+    selector: '[id="main"]'
+  Agency-70-ES:
+    path: /es/benefits/browse-by-agency/agency/70
+    selector: '[id="main"]'
+
+  Agency-3:
+    path: /benefits/browse-by-agency/agency/3
+    selector: '[id="main"]'
+  Agency-3-ES:
+    path: /es/benefits/browse-by-agency/agency/3
+    selector: '[id="main"]'
+
+  Agency-4:
+    path: /benefits/browse-by-agency/agency/4
+    selector: '[id="main"]'
+  Agency-4-ES:
+    path: /es/benefits/browse-by-agency/agency/4
+    selector: '[id="main"]'
+
+  Agency-6:
+    path: /benefits/browse-by-agency/agency/6
+    selector: '[id="main"]'
+  Agency-6-ES:
+    path: /es/benefits/browse-by-agency/agency/6
+    selector: '[id="main"]'
+
+  Agency-805:
+    path: /benefits/browse-by-agency/agency/805
+    selector: '[id="main"]'
+  Agency-805-ES:
+    path: /es/benefits/browse-by-agency/agency/805
+    selector: '[id="main"]'
+
+  Agency-7:
+    path: /benefits/browse-by-agency/agency/7
+    selector: '[id="main"]'
+  Agency-7-ES:
+    path: /es/benefits/browse-by-agency/agency/7
+    selector: '[id="main"]'
+
+  Agency-901:
+    path: /benefits/browse-by-agency/agency/901
+    selector: '[id="main"]'
+  Agency-901-ES:
+    path: /es/benefits/browse-by-agency/agency/901
+    selector: '[id="main"]'
+
+  Agency-1:
+    path: /benefits/browse-by-agency/agency/1
+    selector: '[id="main"]'
+  Agency-1-ES:
+    path: /es/benefits/browse-by-agency/agency/1
+    selector: '[id="main"]'
+
+  Agency-10:
+    path: /benefits/browse-by-agency/agency/10
+    selector: '[id="main"]'
+  Agency-10-ES:
+    path: /es/benefits/browse-by-agency/agency/10
+    selector: '[id="main"]'
+
+  Agency-72:
+    path: /benefits/browse-by-agency/agency/72
+    selector: '[id="main"]'
+  Agency-72-ES:
+    path: /es/benefits/browse-by-agency/agency/72
+    selector: '[id="main"]'
+
+  Agency-67:
+    path: /benefits/browse-by-agency/agency/67
+    selector: '[id="main"]'
+  Agency-67-ES:
+    path: /es/benefits/browse-by-agency/agency/67
+    selector: '[id="main"]'
+
+  Agency-11:
+    path: /benefits/browse-by-agency/agency/11
+    selector: '[id="main"]'
+  Agency-11-ES:
+    path: /es/benefits/browse-by-agency/agency/11
+    selector: '[id="main"]'
+
+  Agency-902:
+    path: /benefits/browse-by-agency/agency/902
+    selector: '[id="main"]'
+  Agency-902-ES:
+    path: /es/benefits/browse-by-agency/agency/902
+    selector: '[id="main"]'
+
+  Agency-64:
+    path: /benefits/browse-by-agency/agency/64
+    selector: '[id="main"]'
+  Agency-64-ES:
+    path: /es/benefits/browse-by-agency/agency/64
+    selector: '[id="main"]'
+
+  Agency-468:
+    path: /benefits/browse-by-agency/agency/468
+    selector: '[id="main"]'
+  Agency-468-ES:
+    path: /es/benefits/browse-by-agency/agency/468
+    selector: '[id="main"]'
+
+  Agency-9:
+    path: /benefits/browse-by-agency/agency/9
+    selector: '[id="main"]'
+  Agency-9-ES:
+    path: /es/benefits/browse-by-agency/agency/9
+    selector: '[id="main"]'
+
+  Agency-908:
+    path: /benefits/browse-by-agency/agency/908
+    selector: '[id="main"]'
+  Agency-908-ES:
+    path: /es/benefits/browse-by-agency/agency/908
+    selector: '[id="main"]'
+
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+phantomjs_options: --ignore-ssl-errors=yes
+
+################################################################
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  #- 450x650
+  - 1280
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+#before_capture: 'javascript/disable_javascript--phantom.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'shots/capture/BG/fullSitemap/agencies'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  #template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_first
+  
+
+
+
